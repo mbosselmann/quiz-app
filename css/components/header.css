@@ -1,0 +1,16 @@
+.header {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+
+}
+
+.title__app {
+    font-family: 'Merriweather', serif;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px black;
+    margin-bottom: 10px;
+
+}
