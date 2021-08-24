@@ -1,0 +1,21 @@
+.navbar {
+    background-color: #fff;
+    position: sticky;
+    bottom: 0;
+
+}
+
+.navlist {
+    text-align: center;
+    padding: 10px;    
+    box-shadow: 0px -2px 5px #000000;    
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.navlist__item {
+    list-style: none;
+    overflow-y: auto;
+}
