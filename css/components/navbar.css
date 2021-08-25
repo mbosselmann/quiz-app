@@ -1,12 +1,6 @@
 .navbar {
     background-color: #2c75ac;
     color: #fff;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 40px;
-    width: 100%;
-
 }
 
 .navlist {
@@ -16,7 +10,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    height: 100%;
 }
 
 .navlist__item {

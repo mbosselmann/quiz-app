@@ -10,4 +10,15 @@ HTML {
 
 body {
     background-color: #fff;
+    display: grid;
+    grid-template-rows: 80px auto 40px;
+    height: 100vh;
+}
+
+main {
+    overflow: auto;
+}
+
+footer {
+    background-color: #2c75ac;
 }
