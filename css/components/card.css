@@ -1,6 +1,5 @@
 
 .card {
-    padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     box-shadow: 0px 0px 5px 1px #9AADBF;
@@ -10,10 +9,6 @@
     margin-right: auto;
     width: 95%;
     font-family: 'Roboto', sans-serif;
-}
-
-.tags {
-    list-style: none;
 }
 
 .card__bookmark {
