@@ -22,3 +22,7 @@ main {
 footer {
     background-color: #2c75ac;
 }
+
+strong {
+    font-weight: 700;
+}

@@ -1,5 +1,8 @@
 @import "/css/_base.css";
-@import "/css/components/card.css";
+@import "/css/components/card/card.css";
 @import "/css/components/header.css";
 @import "/css/components/navbar.css";
-@import "/css/components/tags.css";
+@import "/css/components/card/tags.css";
+@import "/css/components/card/card-header.css";
+@import "/css/components/card/card-content.css";
+@import "/css/components/card/answer.css";
