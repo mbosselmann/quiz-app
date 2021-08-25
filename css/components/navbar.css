@@ -1,6 +1,7 @@
 .navbar {
     background-color: #2c75ac;
     color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
 
 .navlist {
@@ -15,4 +16,13 @@
 .navlist__item {
     list-style: none;
     overflow-y: auto;
+}
+
+.item__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.item__link--click:active {
+    font-size: 1.1rem;
 }
