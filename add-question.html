@@ -21,22 +21,30 @@
     <main>
         <section class="explanation">
             <h2 class="explanation__title">Add your own question</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident assumenda repellat architecto.
-                Nesciunt autem dignissimos
+            <p class="explanation__text">
+                Would you like to add your own questions to this quiz? You are welcome to do so! Just fill out the form
+                below.
             </p>
         </section>
         <form class="add-question-form">
+            <h2 class="add-question-form__title">Add your question form</h2>
             <label class="add-question-form__insert-question-label" for="insert-question">Question:</label>
-            <input id="insert-question" class="add-question-form__insert-question-field" type="text"
-                placeholder="Insert your question here">
-            <label class="add-question-form__upload-img-detail-label" for="image-detail">Upload image-detail</label>
+            <input id="insert-question"
+                class="add-question-form__insert-question-field add-question-form__insert-question-field--focus"
+                type="text" placeholder="Insert your question here">
+            <label class="add-question-form__upload-img-detail-label add-question-form__upload-img-detail-label--active"
+                for="image-detail">Upload image detail</label>
             <input id="image-detail" class="add-question-form__upload-img-detail-input" type="file">
-            <label class="add-question-form__upload-img-label" for="image-detail">Upload image for answer</label>
+            <label class="add-question-form__upload-img-label add-question-form__upload-img-label--active"
+                for="image-detail">Upload image for answer</label>
             <input id="image-detail" class="add-question-form__upload-img-input" type="file">
             <label class="add-question-form__insert-answer-label" for="insert-answer">Answer:</label>
-            <textarea id="insert-answer" name="answer" class="add-question-form__insert-answer"></textarea>
-            <button class="add-question-form__submit-button" type="submit">Submit</button>
-            <button class="add-question-form__reset-button" type="Reset">Reset</button>
+            <textarea id="insert-answer" name="answer"
+                class="add-question-form__insert-answer add-question-form__insert-answer--focus"></textarea>
+            <button class="add-question-form__submit-button add-question-form__submit-button--active"
+                type="submit">Submit</button>
+            <button class="add-question-form__reset-button add-question-form__reset-button--active"
+                type="Reset">Reset</button>
         </form>
     </main>
     <footer>
