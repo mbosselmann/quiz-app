@@ -2,29 +2,45 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
     font-family: 'Roboto', sans-serif;
     margin: 0 20px 20px 20px;
     box-shadow: 0px 0px 5px 1px #9AADBF;
     border-radius: 2px;
 }
 
+.add-question-form__title {
+    box-shadow: 1px 8px 15px -10px #9AADBF;
+    background-color: #24877F;
+    margin-bottom: 10px;
+    padding: 12px 20px 10px 20px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 2px 2px 0 0;
+    font-size: 1.2rem;
+
+}
+
 .add-question-form__insert-question-label, .add-question-form__insert-answer-label {
     font-weight: 700;
     font-size: 1.1rem;
-    padding: 20px 0 5px 2px;
+    padding: 20px 20px 5px 22px;
     text-transform: uppercase;
 }
 
 .add-question-form__insert-question-field {
-    margin: 0 0 20px 0;
+    margin: 0 20px 20px 20px;
     padding: 10px;
     border-radius: 5px;
     border: 2px solid #bbc7d1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.add-question-form__insert-question-field--focus:focus, .add-question-form__insert-answer--focus:focus {
+    outline: none;
+    box-shadow: 0px 0px 3px 1px #bbc7d1;
 }
 
 .add-question-form__upload-img-detail-input, .add-question-form__upload-img-input {
-    padding: 10px 0 10px 0;
     display: none;
 }
 
@@ -45,9 +61,11 @@
 
 .add-question-form__insert-answer {
     height: 20vh;
-    margin: 0 0 20px 0;
+    margin: 0 20px 20px 20px;
     border-radius: 5px;
     border: 2px solid #bbc7d1;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
 }
 
 .add-question-form__submit-button {
@@ -72,6 +90,10 @@
     text-transform: uppercase;
     font-size: 0.8rem;
     margin: 0 40px 20px 40px;
+}
+
+.add-question-form__submit-button--active:active, .add-question-form__reset-button--active:active, .add-question-form__upload-img-detail-label--active:active, .add-question-form__upload-img-label--active:active {
+    font-size: 0.9rem;
 }
 
 
