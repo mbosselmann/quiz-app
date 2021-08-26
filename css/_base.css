@@ -26,3 +26,10 @@ footer {
 strong {
     font-weight: 700;
 }
+
+.bookmarks__title {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px 20px 0 20px;
+    text-align: center;
+}
