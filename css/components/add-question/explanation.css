@@ -1,0 +1,14 @@
+.explanation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 20px 20px 20px;
+}
+
+.explanation__title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 0 0 10px 0;
+}
