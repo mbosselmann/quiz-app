@@ -19,7 +19,25 @@
         <h1 class="title__app">A Walk Through <br> Art History</h1>
     </header>
     <main>
-
+        <section class="explanation">
+            <h2 class="explanation__title">Add your own question</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident assumenda repellat architecto.
+                Nesciunt autem dignissimos
+            </p>
+        </section>
+        <form class="add-question-form">
+            <label class="add-question-form__insert-question-label" for="insert-question">Question:</label>
+            <input id="insert-question" class="add-question-form__insert-question-field" type="text"
+                placeholder="Insert your question here">
+            <label class="add-question-form__upload-img-detail-label" for="image-detail">Upload image-detail</label>
+            <input id="image-detail" class="add-question-form__upload-img-detail-input" type="file">
+            <label class="add-question-form__upload-img-label" for="image-detail">Upload image for answer</label>
+            <input id="image-detail" class="add-question-form__upload-img-input" type="file">
+            <label class="add-question-form__insert-answer-label" for="insert-answer">Answer:</label>
+            <textarea id="insert-answer" name="answer" class="add-question-form__insert-answer"></textarea>
+            <button class="add-question-form__submit-button" type="submit">Submit</button>
+            <button class="add-question-form__reset-button" type="Reset">Reset</button>
+        </form>
     </main>
     <footer>
         <nav class="navbar">
@@ -29,7 +47,7 @@
                 </li>
                 <li class="navlist__item"><a class="item__link item__link--click" href="/add-question.html">Add
                         Question</a></li>
-                <li class="navlist__item">Profile</li>
+                <li class="navlist__item"><a class="item__link item__link--click" href="/profile.html">Profile</a></li>
             </ul>
         </nav>
     </footer>
