@@ -21,6 +21,7 @@ main {
 
 footer {
     background-color: #2c75ac;
+    z-index: 10;
 }
 
 strong {

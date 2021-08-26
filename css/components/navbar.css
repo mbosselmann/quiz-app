@@ -10,13 +10,6 @@
     justify-content: space-evenly;
 }
 
-.navlist__item {
-    list-style: none;
-    overflow-y: auto;
-    margin: 0;
-    padding:0;
-}
-
 .item__link {
     text-decoration: none;
     color: #fff;
