@@ -23,7 +23,7 @@
 .add-question-form__insert-question-label, .add-question-form__insert-answer-label {
     font-weight: 700;
     font-size: 1.1rem;
-    padding: 20px 20px 5px 20px;
+    padding: 20px 20px 5px 22px;
     text-transform: uppercase;
 }
 
@@ -32,6 +32,7 @@
     padding: 10px;
     border-radius: 5px;
     border: 2px solid #bbc7d1;
+    font-family: 'Roboto', sans-serif;
 }
 
 .add-question-form__insert-question-field--focus:focus, .add-question-form__insert-answer--focus:focus {
