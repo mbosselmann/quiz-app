@@ -2,20 +2,19 @@
     background-color: #2c75ac;
     color: #fff;
     font-family: 'Roboto', sans-serif;
-}
-
-.navlist {
     text-align: center;
     padding: 10px;    
     box-shadow: 0px -2px 5px #6D98BA;    
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     justify-content: space-evenly;
 }
 
 .navlist__item {
     list-style: none;
     overflow-y: auto;
+    margin: 0;
+    padding:0;
 }
 
 .item__link {
@@ -25,4 +24,9 @@
 
 .item__link--click:active {
     font-size: 1.1rem;
+}
+
+.item__link-on-page {
+    font-size: 1.1rem;
+    text-transform: uppercase;
 }
