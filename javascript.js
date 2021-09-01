@@ -12,6 +12,7 @@ let buttonElProfile = document.querySelector('#navbar__profile')
 
 window.addEventListener('load', () => {
   mainElQuestions.classList.remove('main--hidden')
+  buttonElHome.classList.add('item__link--position')
 })
 
 buttonElBookmarks.addEventListener('click', () => {
@@ -19,6 +20,10 @@ buttonElBookmarks.addEventListener('click', () => {
   mainElQuestions.classList.add('main--hidden')
   mainElAddQuestion.classList.add('main--hidden')
   mainElProfile.classList.add('main--hidden')
+  buttonElHome.classList.remove('item__link--position')
+  buttonElBookmarks.classList.add('item__link--position')
+  buttonElAddQuestion.classList.remove('item__link--position')
+  buttonElProfile.classList.remove('item__link--position')
 })
 
 buttonElAddQuestion.addEventListener('click', () => {
@@ -26,6 +31,10 @@ buttonElAddQuestion.addEventListener('click', () => {
   mainElQuestions.classList.add('main--hidden')
   mainElAddQuestion.classList.remove('main--hidden')
   mainElProfile.classList.add('main--hidden')
+  buttonElHome.classList.remove('item__link--position')
+  buttonElBookmarks.classList.remove('item__link--position')
+  buttonElAddQuestion.classList.add('item__link--position')
+  buttonElProfile.classList.remove('item__link--position')
 })
 
 buttonElProfile.addEventListener('click', () => {
@@ -33,6 +42,10 @@ buttonElProfile.addEventListener('click', () => {
   mainElQuestions.classList.add('main--hidden')
   mainElAddQuestion.classList.add('main--hidden')
   mainElProfile.classList.remove('main--hidden')
+  buttonElHome.classList.remove('item__link--position')
+  buttonElBookmarks.classList.remove('item__link--position')
+  buttonElAddQuestion.classList.remove('item__link--position')
+  buttonElProfile.classList.add('item__link--position')
 })
 
 buttonElHome.addEventListener('click', () => {
@@ -40,4 +53,8 @@ buttonElHome.addEventListener('click', () => {
   mainElQuestions.classList.remove('main--hidden')
   mainElAddQuestion.classList.add('main--hidden')
   mainElProfile.classList.add('main--hidden')
+  buttonElHome.classList.add('item__link--position')
+  buttonElBookmarks.classList.remove('item__link--position')
+  buttonElAddQuestion.classList.remove('item__link--position')
+  buttonElProfile.classList.remove('item__link--position')
 })
