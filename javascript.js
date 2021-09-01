@@ -10,6 +10,8 @@ let buttonElBookmarks = document.querySelector('#navbar__bookmarks')
 let buttonElAddQuestion = document.querySelector('#navbar__add-question')
 let buttonElProfile = document.querySelector('#navbar__profile')
 
+let buttonElStart = document.querySelector('.intro__start')
+
 window.addEventListener('load', () => {
   mainElQuestions.classList.remove('main--hidden')
   buttonElHome.classList.add('item__link--position')
@@ -57,4 +59,8 @@ buttonElHome.addEventListener('click', () => {
   buttonElBookmarks.classList.remove('item__link--position')
   buttonElAddQuestion.classList.remove('item__link--position')
   buttonElProfile.classList.remove('item__link--position')
+})
+
+buttonElStart.addEventListener('click', () => {
+  window.location.replace('card-start')
 })
