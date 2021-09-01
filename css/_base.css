@@ -1,36 +1,40 @@
 HTML {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 * {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #fff;
-    display: grid;
-    grid-template-rows: 80px auto 40px;
-    height: 100vh;
+  background-color: #fff;
+  display: grid;
+  grid-template-rows: 80px auto 40px;
+  height: 100vh;
 }
 
 main {
-    overflow: auto;
+  overflow: auto;
+}
+
+.main--hidden {
+  display: none;
 }
 
 footer {
-    background-color: #2c75ac;
-    z-index: 10;
+  background-color: #2c75ac;
+  z-index: 10;
 }
 
 strong {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .bookmarks__title {
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    padding: 20px 20px 0 20px;
-    text-align: center;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px 20px 0 20px;
+  text-align: center;
 }

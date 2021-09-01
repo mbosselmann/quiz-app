@@ -1,32 +1,37 @@
 .intro {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Roboto', sans-serif;
-
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .intro__header {
-    text-transform: uppercase;
-    padding: 20px 0 10px 0;
+  text-transform: uppercase;
+  padding: 20px 0 10px 0;
 }
 
 .intro__text {
-    font-size: 1.2rem;
-    padding: 10px 0 30px 0;
+  font-size: 1.2rem;
+  padding: 10px 0 30px 0;
 }
 
 .intro__footprints {
-    width: 90%;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
+  width: 90%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 
 .intro__start {
-    font-size: 1.8rem;
-    font-weight: 700;
-    align-self: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  align-self: center;
+  border: none;
+  padding: 12px 20px 10px 20px;
+  border-radius: 5px;
+  background-color: #24877f;
+  color: #ffffff;
+  box-shadow: 1px 8px 15px -10px #9aadbf;
 }

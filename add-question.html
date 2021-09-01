@@ -1,64 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <h1 class="header__title">A Walk Through <br> Art History</h1>
+      <h1 class="header__title">
+        A Walk Through <br />
+        Art History
+      </h1>
     </header>
-    <main>
-        <section class="explanation">
-            <img class="intro__footprints" src="/images/footprints.png" alt="">
-            <h2 class="explanation__title">Add your own question</h2>
-            <p class="explanation__text">
-                Dou you want to add your own questions to this walk through the history of art? You are welcome to do so! Just fill out the form
-                below.
-            </p>
-            
-        </section>
-        <form class="add-question-form">
-            <h2 class="add-question-form__title">Add your question form</h2>
-            <label class="add-question-form__insert-question-label" for="insert-question">Question:</label>
-            <input id="insert-question"
-                class="add-question-form__insert-question-field add-question-form__insert-question-field--focus"
-                type="text" placeholder="Insert your question here! :-)">
-            <label class="add-question-form__upload-img-detail-label add-question-form__upload-img-detail-label--active"
-                for="image-detail">Upload image detail</label>
-            <input id="image-detail" class="add-question-form__upload-img-detail-input" type="file">
-            <label class="add-question-form__upload-img-label add-question-form__upload-img-label--active"
-                for="image-detail">Upload image for answer</label>
-            <input id="image-detail" class="add-question-form__upload-img-input" type="file">
-            <label class="add-question-form__insert-answer-label" for="insert-answer">Answer:</label>
-            <textarea id="insert-answer" name="answer"
-                class="add-question-form__insert-answer add-question-form__insert-answer--focus"
-                placeholder="Insert your answer here! :-)"></textarea>
-            <button class="add-question-form__submit-button add-question-form__submit-button--active"
-                type="submit">Submit</button>
-            <button class="add-question-form__reset-button add-question-form__reset-button--active"
-                type="Reset">Reset</button>
-        </form>
-    </main>
     <footer>
-        <nav class="navbar">
-            <a class="item__link item__link--click" href="/index.html">Home</a>
-            <a class="item__link item__link--click" href="/bookmarks.html">Bookmarks</a>
-            <a class="item__link item__link-on-page item__link--click" href="/add-question.html">Add
-                Question</a>
-            <a class="item__link item__link--click" href="/profile.html">Profile</a>
-        </nav>
+      <nav class="navbar">
+        <a class="item__link item__link--click" href="/index.html">Home</a>
+        <a class="item__link item__link--click" href="/bookmarks.html"
+          >Bookmarks</a
+        >
+        <a
+          class="item__link item__link-on-page item__link--click"
+          href="/add-question.html"
+          >Add Question</a
+        >
+        <a class="item__link item__link--click" href="/profile.html">Profile</a>
+      </nav>
     </footer>
-</body>
-
+  </body>
 </html>
