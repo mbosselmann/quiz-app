@@ -1,13 +1,15 @@
-
 .card {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0px 0px 5px 1px #9AADBF;
-    border-radius: 5px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;
-    font-family: 'Roboto', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 5px 1px #9aadbf;
+  border-radius: 5px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  font-family: 'Roboto', sans-serif;
 }
 
+.card--hidden {
+  display: none;
+}

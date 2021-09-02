@@ -1,32 +1,15 @@
 .card-content {
-    display: flex;
-    flex-direction:column;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-content__question {
-    padding: 25px;
-    font-size: 1.2rem;
+  padding: 25px;
+  font-size: 1.2rem;
 }
 
 .card-content__img {
-    margin: 0 20px 20px 20px;
-    box-shadow: 1px 8px 15px -10px #2c75ac;
-    border-radius: 2px;
+  margin: 0 20px 20px 20px;
+  box-shadow: 1px 8px 15px -10px #2c75ac;
+  border-radius: 2px;
 }
-
-.card-content__show-answer {
-    background-color: #3C4856;
-    color: #fff;
-    border: none;
-    padding: 10px 15px 10px 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px #6D98BA;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    margin: 0 40px 20px 40px;
-}
-
-.card-content__show-answer--active:active {
-    font-size: 0.9rem;
-}
-

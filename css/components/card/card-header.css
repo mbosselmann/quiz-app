@@ -1,56 +1,40 @@
 .card-header {
-    display: flex;
-    padding: 12px 20px 10px 20px;
-    margin-bottom: 10px;
-    justify-content: space-between;
-    position: relative;
-    box-shadow: 1px 8px 15px -10px #2c75ac;
+  display: flex;
+  padding: 12px 20px 10px 20px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 1px 8px 15px -10px #2c75ac;
 }
 
 .card-header__title {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .card-header__bookmark {
-    position: absolute;
-    right: 20px;
-    top: -10px;
-    border-color: #D7F3FF;
-    border-width: 20px;
-    height: 50px;
-    border-style: solid;
-    border-radius: 5px;    
-    border-bottom-color: green;
-    border-bottom-color: transparent;
-    background-color: transparent;
-}
-
-.card-header__bookmark:active {
-    border-color: #DE8BAB;
-    border-bottom-color: green;
-    border-bottom-color: transparent;
-    background-color: transparent;
-
+  position: absolute;
+  right: 20px;
+  top: -10px;
+  border-color: #d7f3ff;
+  border-width: 20px;
+  height: 50px;
+  border-style: solid;
+  border-radius: 5px;
+  border-bottom-color: green;
+  border-bottom-color: transparent;
+  background-color: transparent;
 }
 
 .card-header__bookmarked {
-    position: absolute;
-    right: 20px;
-    top: -10px;
-    border-color: #DE8BAB;
-    border-width: 20px;
-    height: 50px;
-    border-style: solid;
-    border-radius: 5px;    
-    border-bottom-color: green;
-    border-bottom-color: transparent;
-    background-color: transparent;
-}
-
-.card-header__bookmarked:active {
-    border-color: #D7F3FF;
-    border-bottom-color: green;
-    border-bottom-color: transparent;
-    background-color: transparent;
-
+  position: absolute;
+  right: 20px;
+  top: -10px;
+  border-color: #de8bab;
+  border-width: 20px;
+  height: 50px;
+  border-style: solid;
+  border-radius: 5px;
+  border-bottom-color: green;
+  border-bottom-color: transparent;
+  background-color: transparent;
 }
