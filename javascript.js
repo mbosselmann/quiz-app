@@ -24,12 +24,6 @@ function showButtonMainSection() {
   buttonElProfile.classList.remove('item__link--position')
 }
 
-window.addEventListener('load', () => {
-  hideAll()
-  mainElQuestions.classList.remove('main--hidden')
-  buttonElHome.classList.add('item__link--position')
-})
-
 buttonElBookmarks.addEventListener('click', () => {
   hideAll()
   mainElBookmarks.classList.remove('main--hidden')
