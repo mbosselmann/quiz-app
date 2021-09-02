@@ -10,18 +10,19 @@ const buttonElBookmarks = document.querySelector('#navbar__bookmarks')
 const buttonElAddQuestion = document.querySelector('#navbar__add-question')
 const buttonElProfile = document.querySelector('#navbar__profile')
 
+const mainElArr = document.querySelectorAll('main')
+const navbarElArr = document.querySelectorAll('.navbar__item')
+
 function hideAll() {
-  mainElQuestions.classList.add('main--hidden')
-  mainElBookmarks.classList.add('main--hidden')
-  mainElAddQuestion.classList.add('main--hidden')
-  mainElProfile.classList.add('main--hidden')
+  mainElArr.forEach(mainEl => {
+    mainEl.classList.add('main--hidden')
+  })
 }
 
 function showButtonMainSection() {
-  buttonElHome.classList.remove('item__link--position')
-  buttonElBookmarks.classList.remove('item__link--position')
-  buttonElAddQuestion.classList.remove('item__link--position')
-  buttonElProfile.classList.remove('item__link--position')
+  navbarElArr.forEach(navEl => {
+    navEl.classList.remove('item__link--position')
+  })
 }
 
 buttonElBookmarks.addEventListener('click', () => {
