@@ -61,6 +61,6 @@ buttonElHome.addEventListener('click', () => {
   buttonElProfile.classList.remove('item__link--position')
 })
 
-buttonElStart.addEventListener('click', () => {
+/*buttonElStart.addEventListener('click', () => {
   window.location.replace('card-start')
-})
+})*/
