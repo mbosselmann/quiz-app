@@ -1,71 +1,74 @@
 // Main sections & navbar
 
-let mainElQuestions = document.querySelector('#main__questions')
-let mainElBookmarks = document.querySelector('#main__bookmarks')
-let mainElAddQuestion = document.querySelector('#main__create')
-let mainElProfile = document.querySelector('#main__profile')
+const mainElQuestions = document.querySelector('#main__questions')
+const mainElBookmarks = document.querySelector('#main__bookmarks')
+const mainElAddQuestion = document.querySelector('#main__create')
+const mainElProfile = document.querySelector('#main__profile')
 
-let buttonElHome = document.querySelector('#navbar__home')
-let buttonElBookmarks = document.querySelector('#navbar__bookmarks')
-let buttonElAddQuestion = document.querySelector('#navbar__add-question')
-let buttonElProfile = document.querySelector('#navbar__profile')
+const buttonElHome = document.querySelector('#navbar__home')
+const buttonElBookmarks = document.querySelector('#navbar__bookmarks')
+const buttonElAddQuestion = document.querySelector('#navbar__add-question')
+const buttonElProfile = document.querySelector('#navbar__profile')
+
+function hideAll() {
+  mainElQuestions.classList.add('main--hidden')
+  mainElBookmarks.classList.add('main--hidden')
+  mainElAddQuestion.classList.add('main--hidden')
+  mainElProfile.classList.add('main--hidden')
+}
+
+function showButtonMainSection() {
+  buttonElHome.classList.remove('item__link--position')
+  buttonElBookmarks.classList.remove('item__link--position')
+  buttonElAddQuestion.classList.remove('item__link--position')
+  buttonElProfile.classList.remove('item__link--position')
+}
 
 window.addEventListener('load', () => {
+  hideAll()
   mainElQuestions.classList.remove('main--hidden')
   buttonElHome.classList.add('item__link--position')
 })
 
 buttonElBookmarks.addEventListener('click', () => {
+  hideAll()
   mainElBookmarks.classList.remove('main--hidden')
-  mainElQuestions.classList.add('main--hidden')
-  mainElAddQuestion.classList.add('main--hidden')
-  mainElProfile.classList.add('main--hidden')
-  buttonElHome.classList.remove('item__link--position')
+
+  showButtonMainSection()
   buttonElBookmarks.classList.add('item__link--position')
-  buttonElAddQuestion.classList.remove('item__link--position')
-  buttonElProfile.classList.remove('item__link--position')
 })
 
 buttonElAddQuestion.addEventListener('click', () => {
-  mainElBookmarks.classList.add('main--hidden')
-  mainElQuestions.classList.add('main--hidden')
+  hideAll()
   mainElAddQuestion.classList.remove('main--hidden')
-  mainElProfile.classList.add('main--hidden')
-  buttonElHome.classList.remove('item__link--position')
-  buttonElBookmarks.classList.remove('item__link--position')
+
+  showButtonMainSection()
   buttonElAddQuestion.classList.add('item__link--position')
-  buttonElProfile.classList.remove('item__link--position')
 })
 
 buttonElProfile.addEventListener('click', () => {
-  mainElBookmarks.classList.add('main--hidden')
-  mainElQuestions.classList.add('main--hidden')
-  mainElAddQuestion.classList.add('main--hidden')
+  hideAll()
   mainElProfile.classList.remove('main--hidden')
-  buttonElHome.classList.remove('item__link--position')
-  buttonElBookmarks.classList.remove('item__link--position')
-  buttonElAddQuestion.classList.remove('item__link--position')
+
+  showButtonMainSection()
   buttonElProfile.classList.add('item__link--position')
 })
 
 buttonElHome.addEventListener('click', () => {
-  mainElBookmarks.classList.add('main--hidden')
+  hideAll()
   mainElQuestions.classList.remove('main--hidden')
-  mainElAddQuestion.classList.add('main--hidden')
-  mainElProfile.classList.add('main--hidden')
+
+  showButtonMainSection()
   buttonElHome.classList.add('item__link--position')
-  buttonElBookmarks.classList.remove('item__link--position')
-  buttonElAddQuestion.classList.remove('item__link--position')
-  buttonElProfile.classList.remove('item__link--position')
 })
 
 // Bookmarks
 
-let toggleBookmarkOne = document.querySelector('#bookmark1')
-let toggleBookmarkTwo = document.querySelector('#bookmark2')
-let toggleBookmarkThree = document.querySelector('#bookmark3')
-let toggleBookmarkFour = document.querySelector('#bookmark4')
-let toggleBookmarkFive = document.querySelector('#bookmark5')
+const toggleBookmarkOne = document.querySelector('#bookmark1')
+const toggleBookmarkTwo = document.querySelector('#bookmark2')
+const toggleBookmarkThree = document.querySelector('#bookmark3')
+const toggleBookmarkFour = document.querySelector('#bookmark4')
+const toggleBookmarkFive = document.querySelector('#bookmark5')
 
 toggleBookmarkOne.addEventListener('click', () => {
   toggleBookmarkOne.classList.toggle('card-header__bookmarked')
