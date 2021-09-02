@@ -25,13 +25,6 @@
   background-color: transparent;
 }
 
-/*.card-header__bookmark:active {
-  border-color: #de8bab;
-  border-bottom-color: green;
-  border-bottom-color: transparent;
-  background-color: transparent;
-}*/
-
 .card-header__bookmarked {
   position: absolute;
   right: 20px;
@@ -45,11 +38,3 @@
   border-bottom-color: transparent;
   background-color: transparent;
 }
-
-/*.card-header__bookmarked:active {
-    border-color: #D7F3FF;
-    border-bottom-color: green;
-    border-bottom-color: transparent;
-    background-color: transparent;
-
-}*/
