@@ -1,4 +1,4 @@
-// Main-Sections mit Navbar einblenden
+// Main sections & navbar
 
 let mainElQuestions = document.querySelector('#main__questions')
 let mainElBookmarks = document.querySelector('#main__bookmarks')
@@ -9,8 +9,6 @@ let buttonElHome = document.querySelector('#navbar__home')
 let buttonElBookmarks = document.querySelector('#navbar__bookmarks')
 let buttonElAddQuestion = document.querySelector('#navbar__add-question')
 let buttonElProfile = document.querySelector('#navbar__profile')
-
-let buttonElStart = document.querySelector('.intro__start')
 
 window.addEventListener('load', () => {
   mainElQuestions.classList.remove('main--hidden')
@@ -61,6 +59,30 @@ buttonElHome.addEventListener('click', () => {
   buttonElProfile.classList.remove('item__link--position')
 })
 
-/*buttonElStart.addEventListener('click', () => {
-  window.location.replace('card-start')
-})*/
+// Bookmarks
+
+let toggleBookmarkOne = document.querySelector('#bookmark1')
+let toggleBookmarkTwo = document.querySelector('#bookmark2')
+let toggleBookmarkThree = document.querySelector('#bookmark3')
+let toggleBookmarkFour = document.querySelector('#bookmark4')
+let toggleBookmarkFive = document.querySelector('#bookmark5')
+
+toggleBookmarkOne.addEventListener('click', () => {
+  toggleBookmarkOne.classList.toggle('card-header__bookmarked')
+})
+
+toggleBookmarkTwo.addEventListener('click', () => {
+  toggleBookmarkTwo.classList.toggle('card-header__bookmarked')
+})
+
+toggleBookmarkThree.addEventListener('click', () => {
+  toggleBookmarkThree.classList.toggle('card-header__bookmarked')
+})
+
+toggleBookmarkFour.addEventListener('click', () => {
+  toggleBookmarkFour.classList.toggle('card-header__bookmarked')
+})
+
+toggleBookmarkFive.addEventListener('click', () => {
+  toggleBookmarkFive.classList.toggle('card-header__bookmarked')
+})
