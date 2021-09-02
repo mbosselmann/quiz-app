@@ -133,7 +133,7 @@ toggleBookmarkFive.addEventListener('click', () => {
 toggleBookmarkSix.addEventListener('click', () => {
   toggleBookmarkSix.classList.toggle('card-header__bookmarked')
   toggleBookmarkSix.classList.toggle('card-header__bookmark')
-  if (toggleBookmarkSix.classList == 'card-header__bookmark') {
+  if (toggleBookmarkSix.classList.contains('card-header__bookmark')) {
     saveBookmarkOne.classList.add('card--hidden')
     toggleBookmarkOne.classList.remove('card-header__bookmarked')
     toggleBookmarkOne.classList.add('card-header__bookmark')
@@ -197,5 +197,36 @@ toggleBookmarkTen.addEventListener('click', () => {
     toggleBookmarkTen.classList.add('card-header__bookmarked')
   } else {
     saveBookmarkFive.classList.remove('card--hidden')
+  }
+})
+
+// Card answers
+
+const toggleAnswerButtonArnolfini = document.querySelector(
+  '#answer-button-arnolfini'
+)
+const toggleAnswerButtonGogh = document.querySelector('#answer-button-gogh')
+const toggleAnswerButtonGoya = document.querySelector('#answer-button-goya')
+const toggleAnswerButtonFriedrich = document.querySelector(
+  '#answer-button-friedrich'
+)
+const toggleAnswerButtonGainsborough = document.querySelector(
+  '#answer-button-gainsborough'
+)
+
+const presentAnswerArnolfini = document.querySelector('#answer-arnolfini')
+const presentAnswerGogh = document.querySelector('#answer-gogh')
+const presentAnswerGoya = document.querySelector('#answer-goya')
+const presentAnswerFriedrich = document.querySelector('#answer-friedrich')
+const presentAnswerGainsborough = document.querySelector('#answer-gainsborough')
+
+toggleAnswerButtonArnolfini.addEventListener('click', () => {
+  presentAnswerArnolfini.classList.toggle('answer--hidden')
+  presentAnswerArnolfini.classList.toggle('answer')
+  if (!presentAnswerArnolfini.classList.contains('answer--hidden')) {
+    toggleAnswerButtonArnolfini.textContent = 'Hide Answer'
+    toggleAnswerButtonArnolfini.classList.add('card-content__hide-answer')
+  } else {
+    toggleAnswerButtonArnolfini.textContent = 'Show Answer'
   }
 })
