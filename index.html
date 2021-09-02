@@ -34,7 +34,7 @@
         Art History
       </h1>
     </header>
-    <main id="main__questions" class="">
+    <main id="main__questions" class="main">
       <section class="intro">
         <h2 class="intro__title">Your walk starts here!</h2>
         <p class="intro__text">
@@ -253,16 +253,52 @@
         </ul>
       </section>
     </main>
-    <main id="main__bookmarks" class="main--hidden">
-      <h2 class="bookmarks__title">Your bookmarks</h2>
-      <section class="card">
+    <main id="main__bookmarks" class="main main--hidden">
+      <section id="card6" class="card card--hidden">
         <div class="card-header">
           <h2 class="card-header__title">Question:</h2>
-          <a href="" aria-label="bookmark"
-            ><button
-              class="card-header__bookmarked card-header__bookmarked--active"
-            ></button
-          ></a>
+          <button id="bookmark6" class="card-header__bookmarked"></button>
+        </div>
+        <div class="card-content">
+          <p class="card-content__question">
+            To which famous masterpiece does this detail belong?
+          </p>
+          <img
+            class="card-content__img"
+            src="images/arnolfinidetail.png"
+            alt="Detail picture for question"
+          />
+          <button
+            class="card-content__show-answer card-content__show-answer--active"
+          >
+            Answer
+          </button>
+          <div class="answer answer--hide">
+            <div class="answer-header">
+              <h3 class="answer__title">Answer:</h3>
+            </div>
+            <div class="answer__content">
+              <img class="content__img" src="images/arnolfini.png" />
+              <p class="content__text">
+                The image detail shown above is a portion of the painting
+                <strong>"The Arnolfini Wedding"</strong> by
+                <strong>Jan van Eyck</strong> from <strong>1434</strong>. The
+                artwork is located in the
+                <strong>National Gallery in London</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+        <ul class="tags">
+          <li class="tags__item">15th century</li>
+          <li class="tags__item">Painting</li>
+          <li class="tags__item">Netherlands</li>
+        </ul>
+      </section>
+      <section id="card7" class="card card--hidden">
+        <div class="card-header">
+          <h2 class="card-header__title">Question:</h2>
+          <button id="bookmark7" class="card-header__bookmarked"></button>
         </div>
         <div class="card-content">
           <p class="card-content__question">
@@ -300,14 +336,94 @@
           <li class="tags__item">France</li>
         </ul>
       </section>
-      <section class="card">
+
+      <section id="card8" class="card card--hidden">
         <div class="card-header">
           <h2 class="card-header__title">Question:</h2>
-          <a href="" aria-label="bookmark"
-            ><button
-              class="card-header__bookmarked card-header__bookmarked--active"
-            ></button
-          ></a>
+          <button id="bookmark8" class="card-header__bookmarked"></button>
+        </div>
+        <div class="card-content">
+          <p class="card-content__question">
+            To which famous masterpiece does this detail belong?
+          </p>
+          <img
+            class="card-content__img"
+            src="images/goyadetail.png"
+            alt="Detail picture for question"
+          />
+          <button
+            id="bookmark2"
+            class="card-content__show-answer card-content__show-answer--active"
+          >
+            Answer
+          </button>
+          <div class="answer answer--hide">
+            <div class="answer-header">
+              <h3 class="answer__title">Answer:</h3>
+            </div>
+            <div class="answer__content">
+              <img class="content__img" src="images/goya.png" />
+              <p class="content__text">
+                <strong>Francisco Goya</strong> painted
+                <strong>"The Third of May"</strong> in the year
+                <strong>1814</strong>. It's also known as "El tres mayo de 1808
+                en Madrid and is located in the
+                <strong>Museo del Prado in Madrid</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+        <ul class="tags">
+          <li class="tags__item">19th century</li>
+          <li class="tags__item">Painting</li>
+          <li class="tags__item">Spain</li>
+        </ul>
+      </section>
+      <section id="card9" class="card card--hidden">
+        <div class="card-header">
+          <h2 class="card-header__title">Question:</h2>
+          <button id="bookmark9" class="card-header__bookmarked"></button>
+        </div>
+        <div class="card-content">
+          <p class="card-content__question">
+            To which famous masterpiece does this detail belong?
+          </p>
+          <img
+            class="card-content__img"
+            src="images/wandererdetail.png"
+            alt="Detail picture for question"
+          />
+          <button
+            id="bookmark4"
+            class="card-content__show-answer card-content__show-answer--active"
+          >
+            Answer
+          </button>
+          <div class="answer answer--hide">
+            <div class="answer-header">
+              <h3 class="answer__title">Answer:</h3>
+            </div>
+            <div class="answer__content">
+              <img class="content__img" src="images/wanderer.png" />
+              <p class="content__text">
+                The <strong>"Wanderer above the Sea of Fog"</strong> was painted
+                by <strong>Caspar David Friedrich</strong>. It' estimated that
+                it was created <strong>around 1808</strong>. Today it is on
+                display in the <strong>Kunsthalle Hamburg</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+        <ul class="tags">
+          <li class="tags__item">19th century</li>
+          <li class="tags__item">Painting</li>
+          <li class="tags__item">Germany</li>
+        </ul>
+      </section>
+      <section id="card10" class="card card--hidden">
+        <div class="card-header">
+          <h2 class="card-header__title">Question:</h2>
+          <button id="bookmark10" class="card-header__bookmarked"></button>
         </div>
         <div class="card-content">
           <p class="card-content__question">
@@ -346,7 +462,7 @@
         </ul>
       </section>
     </main>
-    <main id="main__create" class="main--hidden">
+    <main id="main__create" class="main main--hidden">
       <section class="explanation">
         <img class="intro__footprints" src="/images/footprints.png" alt="" />
         <h2 class="explanation__title">Add your own question</h2>
@@ -432,7 +548,7 @@
         </button>
       </form>
     </main>
-    <main id="main__profile" class="main--hidden">
+    <main id="main__profile" class="main main--hidden">
       <section class="about-person">
         <h2 class="about-person__title">Your profile</h2>
         <figure class="profile-header">
