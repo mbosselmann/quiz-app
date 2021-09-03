@@ -196,10 +196,8 @@ toggleBookmarkTen.addEventListener('click', () => {
 // Card answers
 
 const toggleAnswerButton = document.querySelectorAll('.answer-button')
-console.log(toggleAnswerButton)
 
 const presentAnswer = document.querySelectorAll('.present-answer')
-console.log(presentAnswer)
 
 toggleAnswerButton.forEach((buttonEl, indexAnswer) => {
   buttonEl.addEventListener('click', () => {
