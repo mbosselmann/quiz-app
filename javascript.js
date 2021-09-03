@@ -73,7 +73,6 @@ const toggleBookmarkNine = document.querySelector('#bookmark9')
 const toggleBookmarkTen = document.querySelector('#bookmark10')
 
 const toggleBookmark = document.querySelectorAll('.question-bookmark')
-console.log(toggleBookmark)
 
 // Part 2: Const for bookmarked bookmarks to appear in main__bookmarks
 
@@ -210,6 +209,8 @@ const toggleAnswerButtonGainsborough = document.querySelector(
   '#answer-button-gainsborough'
 )
 
+const toggleAnswerButton = document.querySelectorAll('.answer-button')
+console.log(toggleAnswerButton)
 // Part 2: Const for answer content of questions in main__questions
 
 const presentAnswerArnolfini = document.querySelector('#answer-arnolfini')
@@ -218,76 +219,25 @@ const presentAnswerGoya = document.querySelector('#answer-goya')
 const presentAnswerFriedrich = document.querySelector('#answer-friedrich')
 const presentAnswerGainsborough = document.querySelector('#answer-gainsborough')
 
+const presentAnswer = document.querySelectorAll('.present-answer')
+console.log(presentAnswer)
+
 // Part 3: Answer card toggle for answers to questions in main__questions
 
-toggleAnswerButtonArnolfini.addEventListener('click', () => {
-  presentAnswerArnolfini.classList.toggle('answer--hidden')
-  presentAnswerArnolfini.classList.toggle('answer')
-  if (!presentAnswerArnolfini.classList.contains('answer--hidden')) {
-    toggleAnswerButtonArnolfini.textContent = 'Hide Answer'
-    toggleAnswerButtonArnolfini.classList.add('card-content__hide-answer')
-    toggleAnswerButtonArnolfini.classList.remove('card-content__show-answer')
-  } else {
-    toggleAnswerButtonArnolfini.textContent = 'Show Answer'
-    toggleAnswerButtonArnolfini.classList.remove('card-content__hide-answer')
-    toggleAnswerButtonArnolfini.classList.add('card-content__show-answer')
-  }
-})
-
-toggleAnswerButtonGogh.addEventListener('click', () => {
-  presentAnswerGogh.classList.toggle('answer--hidden')
-  presentAnswerGogh.classList.toggle('answer')
-  if (!presentAnswerGogh.classList.contains('answer--hidden')) {
-    toggleAnswerButtonGogh.textContent = 'Hide Answer'
-    toggleAnswerButtonGogh.classList.add('card-content__hide-answer')
-    toggleAnswerButtonGogh.classList.remove('card-content__show-answer')
-  } else {
-    toggleAnswerButtonGogh.textContent = 'Show Answer'
-    toggleAnswerButtonGogh.classList.remove('card-content__hide-answer')
-    toggleAnswerButtonGogh.classList.add('card-content__show-answer')
-  }
-})
-
-toggleAnswerButtonGoya.addEventListener('click', () => {
-  presentAnswerGoya.classList.toggle('answer--hidden')
-  presentAnswerGoya.classList.toggle('answer')
-  if (!presentAnswerGoya.classList.contains('answer--hidden')) {
-    toggleAnswerButtonGoya.textContent = 'Hide Answer'
-    toggleAnswerButtonGoya.classList.add('card-content__hide-answer')
-    toggleAnswerButtonGoya.classList.remove('card-content__show-answer')
-  } else {
-    toggleAnswerButtonGoya.textContent = 'Show Answer'
-    toggleAnswerButtonGoya.classList.remove('card-content__hide-answer')
-    toggleAnswerButtonGoya.classList.add('card-content__show-answer')
-  }
-})
-
-toggleAnswerButtonFriedrich.addEventListener('click', () => {
-  presentAnswerFriedrich.classList.toggle('answer--hidden')
-  presentAnswerFriedrich.classList.toggle('answer')
-  if (!presentAnswerFriedrich.classList.contains('answer--hidden')) {
-    toggleAnswerButtonFriedrich.textContent = 'Hide Answer'
-    toggleAnswerButtonFriedrich.classList.add('card-content__hide-answer')
-    toggleAnswerButtonFriedrich.classList.remove('card-content__show-answer')
-  } else {
-    toggleAnswerButtonFriedrich.textContent = 'Show Answer'
-    toggleAnswerButtonFriedrich.classList.remove('card-content__hide-answer')
-    toggleAnswerButtonFriedrich.classList.add('card-content__show-answer')
-  }
-})
-
-toggleAnswerButtonGainsborough.addEventListener('click', () => {
-  presentAnswerGainsborough.classList.toggle('answer--hidden')
-  presentAnswerGainsborough.classList.toggle('answer')
-  if (!presentAnswerGainsborough.classList.contains('answer--hidden')) {
-    toggleAnswerButtonGainsborough.textContent = 'Hide Answer'
-    toggleAnswerButtonGainsborough.classList.add('card-content__hide-answer')
-    toggleAnswerButtonGainsborough.classList.remove('card-content__show-answer')
-  } else {
-    toggleAnswerButtonGainsborough.textContent = 'Show Answer'
-    toggleAnswerButtonGainsborough.classList.remove('card-content__hide-answer')
-    toggleAnswerButtonGainsborough.classList.add('card-content__show-answer')
-  }
+toggleAnswerButton.forEach((buttonEl, index) => {
+  buttonEl.addEventListener('click', () => {
+    if (presentAnswer[index].classList.contains('answer--hidden')) {
+      presentAnswer[index].classList.remove('answer--hidden')
+      buttonEl.textContent = 'Hide Answer'
+      buttonEl.classList.add('card-content__hide-answer')
+      buttonEl.classList.remove('card-content__show-answer')
+    } else {
+      presentAnswer[index].classList.add('answer--hidden')
+      buttonEl.textContent = 'Show Answer'
+      buttonEl.classList.remove('card-content__hide-answer')
+      buttonEl.classList.add('card-content__show-answer')
+    }
+  })
 })
 
 // Part 4: Const for answer buttons of questions in main__bookmarks
