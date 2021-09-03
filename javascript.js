@@ -72,6 +72,9 @@ const toggleBookmarkEight = document.querySelector('#bookmark8')
 const toggleBookmarkNine = document.querySelector('#bookmark9')
 const toggleBookmarkTen = document.querySelector('#bookmark10')
 
+const toggleBookmark = document.querySelectorAll('.question-bookmark')
+console.log(toggleBookmark)
+
 // Part 2: Const for bookmarked bookmarks to appear in main__bookmarks
 
 const saveBookmarkOne = document.querySelector('#card6')
@@ -82,10 +85,15 @@ const saveBookmarkFive = document.querySelector('#card10')
 
 // Part 3: Bookmark function for questions in main__questions
 
+toggleBookmark.forEach((bookmarkEl, index) => {
+  bookmarkEl.addEventListener('click', () => {
+    bookmarkEl.classList.toggle('card-header__bookmark')
+    bookmarkEl.classList.toggle('card-header__bookmarked')
+  })
+})
+
 toggleBookmarkOne.addEventListener('click', () => {
-  toggleBookmarkOne.classList.toggle('card-header__bookmarked')
-  toggleBookmarkOne.classList.toggle('card-header__bookmark')
-  if (toggleBookmarkOne.classList == 'card-header__bookmarked') {
+  if (toggleBookmarkOne.classList.contains('card-header__bookmarked')) {
     saveBookmarkOne.classList.remove('card--hidden')
   } else {
     saveBookmarkOne.classList.add('card--hidden')
@@ -93,9 +101,7 @@ toggleBookmarkOne.addEventListener('click', () => {
 })
 
 toggleBookmarkTwo.addEventListener('click', () => {
-  toggleBookmarkTwo.classList.toggle('card-header__bookmarked')
-  toggleBookmarkTwo.classList.toggle('card-header__bookmark')
-  if (toggleBookmarkTwo.classList == 'card-header__bookmarked') {
+  if (toggleBookmarkTwo.classList.contains('card-header__bookmarked')) {
     saveBookmarkTwo.classList.remove('card--hidden')
   } else {
     saveBookmarkTwo.classList.add('card--hidden')
@@ -103,9 +109,7 @@ toggleBookmarkTwo.addEventListener('click', () => {
 })
 
 toggleBookmarkThree.addEventListener('click', () => {
-  toggleBookmarkThree.classList.toggle('card-header__bookmarked')
-  toggleBookmarkThree.classList.toggle('card-header__bookmark')
-  if (toggleBookmarkThree.classList == 'card-header__bookmarked') {
+  if (toggleBookmarkThree.classList.contains('card-header__bookmarked')) {
     saveBookmarkThree.classList.remove('card--hidden')
   } else {
     saveBookmarkThree.classList.add('card--hidden')
@@ -113,9 +117,7 @@ toggleBookmarkThree.addEventListener('click', () => {
 })
 
 toggleBookmarkFour.addEventListener('click', () => {
-  toggleBookmarkFour.classList.toggle('card-header__bookmarked')
-  toggleBookmarkFour.classList.toggle('card-header__bookmark')
-  if (toggleBookmarkFour.classList == 'card-header__bookmarked') {
+  if (toggleBookmarkFour.classList.contains('card-header__bookmarked')) {
     saveBookmarkFour.classList.remove('card--hidden')
   } else {
     saveBookmarkFour.classList.add('card--hidden')
@@ -123,20 +125,16 @@ toggleBookmarkFour.addEventListener('click', () => {
 })
 
 toggleBookmarkFive.addEventListener('click', () => {
-  toggleBookmarkFive.classList.toggle('card-header__bookmarked')
-  toggleBookmarkFive.classList.toggle('card-header__bookmark')
-  if (toggleBookmarkFive.classList == 'card-header__bookmarked') {
+  if (toggleBookmarkFive.classList.contains('card-header__bookmarked')) {
     saveBookmarkFive.classList.remove('card--hidden')
   } else {
     saveBookmarkFive.classList.add('card--hidden')
   }
 })
 
-// Part 4: Bookmark function for questions in main__bookmarks
+// // Part 4: Bookmark function for questions in main__bookmarks
 
 toggleBookmarkSix.addEventListener('click', () => {
-  toggleBookmarkSix.classList.toggle('card-header__bookmarked')
-  toggleBookmarkSix.classList.toggle('card-header__bookmark')
   if (toggleBookmarkSix.classList.contains('card-header__bookmark')) {
     saveBookmarkOne.classList.add('card--hidden')
     toggleBookmarkOne.classList.remove('card-header__bookmarked')
@@ -149,9 +147,7 @@ toggleBookmarkSix.addEventListener('click', () => {
 })
 
 toggleBookmarkSeven.addEventListener('click', () => {
-  toggleBookmarkSeven.classList.toggle('card-header__bookmarked')
-  toggleBookmarkSeven.classList.toggle('card-header__bookmark')
-  if (toggleBookmarkSeven.classList == 'card-header__bookmark') {
+  if (toggleBookmarkSeven.classList.contains('card-header__bookmark')) {
     saveBookmarkTwo.classList.add('card--hidden')
     toggleBookmarkTwo.classList.remove('card-header__bookmarked')
     toggleBookmarkTwo.classList.add('card-header__bookmark')
@@ -163,9 +159,7 @@ toggleBookmarkSeven.addEventListener('click', () => {
 })
 
 toggleBookmarkEight.addEventListener('click', () => {
-  toggleBookmarkEight.classList.toggle('card-header__bookmarked')
-  toggleBookmarkEight.classList.toggle('card-header__bookmark')
-  if (toggleBookmarkEight.classList == 'card-header__bookmark') {
+  if (toggleBookmarkEight.classList.contains('card-header__bookmark')) {
     saveBookmarkThree.classList.add('card--hidden')
     toggleBookmarkThree.classList.remove('card-header__bookmarked')
     toggleBookmarkThree.classList.add('card-header__bookmark')
@@ -177,9 +171,7 @@ toggleBookmarkEight.addEventListener('click', () => {
 })
 
 toggleBookmarkNine.addEventListener('click', () => {
-  toggleBookmarkNine.classList.toggle('card-header__bookmarked')
-  toggleBookmarkNine.classList.toggle('card-header__bookmark')
-  if (toggleBookmarkNine.classList == 'card-header__bookmark') {
+  if (toggleBookmarkNine.classList.contains('card-header__bookmark')) {
     saveBookmarkFour.classList.add('card--hidden')
     toggleBookmarkFour.classList.remove('card-header__bookmarked')
     toggleBookmarkFour.classList.add('card-header__bookmark')
@@ -191,9 +183,7 @@ toggleBookmarkNine.addEventListener('click', () => {
 })
 
 toggleBookmarkTen.addEventListener('click', () => {
-  toggleBookmarkTen.classList.toggle('card-header__bookmarked')
-  toggleBookmarkTen.classList.toggle('card-header__bookmark')
-  if (toggleBookmarkTen.classList == 'card-header__bookmark') {
+  if (toggleBookmarkTen.classList.contains('card-header__bookmark')) {
     saveBookmarkFive.classList.add('card--hidden')
     toggleBookmarkFive.classList.remove('card-header__bookmarked')
     toggleBookmarkFive.classList.add('card-header__bookmark')
