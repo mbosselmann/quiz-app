@@ -8,8 +8,35 @@ HTML {
   padding: 0;
 }
 
+:root {
+  --text-color: #000;
+  --text-color-color-bg: #fff;
+  --main-bg-color: #fff;
+  --top-bottom-bg-color: #2c75ac;
+  --box-shadow-spec: #2c75ac;
+  --box-shadow-normal: #6d98ba;
+  --box-shadow-light: #9aadbf;
+  --buttom-reg-bg-color: #3c4856;
+  --buttom-spec-bg-color: #a55777;
+  --button-submit-bg-color: #24877f;
+  --button-submit-second-bg-color: #009689;
+  --button-img-upload: #6ba9e4;
+  --box-shadow-button-spec: #de8bab;
+  --tags-bg: #e6f4f1;
+  --bookmark-off-color: #d7f3ff;
+  --bookmark-on-color: #de8bab;
+  --answer-header-bg-color: #24877f;
+  --answer-img-boxshadow: #24877f;
+  --border-color: #bbc7d1;
+}
+
+.dark-mode {
+  --text-color: #fff;
+  --main-bg-color: #242424;
+}
+
 body {
-  background-color: #fff;
+  background-color: var(--main-bg-color);
   display: grid;
   grid-template-rows: 80px auto 40px;
   height: 100vh;
@@ -24,7 +51,7 @@ main {
 }
 
 footer {
-  background-color: #2c75ac;
+  background-color: var(--top-bottom-bg-color);
   z-index: 10;
 }
 

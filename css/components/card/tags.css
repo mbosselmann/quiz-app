@@ -1,15 +1,15 @@
 .tags {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    margin: 0;
-    padding: 15px;
-    background-color: #E6F4F1;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0;
+  padding: 15px;
+  background-color: var(--tags-bg);
 }
 
 .tags__item {
-    list-style-type: none;
-    background-color: #fff;
-    padding: 5px 10px 5px 10px;
-    border-radius: 5px;
+  list-style-type: none;
+  background-color: var(--main-bg-color);
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
 }

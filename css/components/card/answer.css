@@ -1,5 +1,5 @@
 .answer {
-  box-shadow: 0px 0px 5px 1px #9aadbf;
+  box-shadow: 0px 0px 5px 1px var(--box-shadow-light);
   margin: 0 10px 10px 10px;
 }
 
@@ -9,8 +9,8 @@
   margin-bottom: 10px;
   justify-content: space-between;
   position: relative;
-  box-shadow: 1px 8px 15px -10px #9aadbf;
-  background-color: #24877f;
+  box-shadow: 1px 8px 15px -10px var(--box-shadow-light);
+  background-color: var(--answer-header-bg-color);
 }
 
 .answer__content {
@@ -23,11 +23,11 @@
 
 .answer__title {
   text-transform: uppercase;
-  color: #fff;
+  color: var(--text-color-color-bg);
 }
 
 .content__img {
-  box-shadow: 1px 8px 15px -10px #24877f;
+  box-shadow: 1px 8px 15px -10px var(--answer-img-boxshadow);
   border-radius: 2px;
 }
 
@@ -36,30 +36,30 @@
 }
 
 .answer--hidden {
-  box-shadow: 0px 0px 5px 1px #9aadbf;
+  box-shadow: 0px 0px 5px 1px var(--box-shadow-light);
   margin: 0 10px 10px 10px;
   display: none;
 }
 
 .card-content__show-answer {
-  background-color: #3c4856;
-  color: #fff;
+  background-color: var(--buttom-reg-bg-color);
+  color: var(--text-color-color-bg);
   border: none;
   padding: 10px 15px 10px 15px;
   border-radius: 5px;
-  box-shadow: 0 2px 5px #6d98ba;
+  box-shadow: 0 2px 5px var(--box-shadow-normal);
   text-transform: uppercase;
   font-size: 0.8rem;
   margin: 0 40px 20px 40px;
 }
 
 .card-content__hide-answer {
-  background-color: #a55777;
-  color: #fff;
+  background-color: var(--buttom-spec-bg-color);
+  color: var(--text-color-color-bg);
   border: none;
   padding: 10px 15px 10px 15px;
   border-radius: 5px;
-  box-shadow: 0 2px 5px #6d98ba;
+  box-shadow: 0 2px 5px var(--box-shadow-normal);
   text-transform: uppercase;
   font-size: 0.8rem;
   margin: 0 40px 20px 40px;

@@ -1,5 +1,5 @@
 .header {
-  background-color: #2c75ac;
+  background-color: var(--top-bottom-bg-color);
   color: #fff;
   z-index: 10;
 }
@@ -9,7 +9,7 @@
   font-size: 1.5rem;
   text-align: center;
   padding: 10px;
-  box-shadow: 0 2px 5px #6d98ba;
+  box-shadow: 0 2px 5px var(--box-shadow-normal);
   margin-bottom: 10px;
   height: 80px;
 }

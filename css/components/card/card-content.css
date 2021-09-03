@@ -10,6 +10,6 @@
 
 .card-content__img {
   margin: 0 20px 20px 20px;
-  box-shadow: 1px 8px 15px -10px #2c75ac;
+  box-shadow: 1px 8px 15px -10px var(--box-shadow-spec);
   border-radius: 2px;
 }
