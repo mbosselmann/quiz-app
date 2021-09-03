@@ -1,6 +1,7 @@
 .card-content {
   display: flex;
   flex-direction: column;
+  color: var(--text-color);
 }
 
 .card-content__question {

@@ -234,3 +234,12 @@ resetFormElAfterSubmitButton.addEventListener('click', () => {
 resetFormElButton.addEventListener('click', () => {
   document.getElementById('form').reset()
 })
+
+// Dark mode
+
+const darkMode = document.querySelector('#dark-mode')
+console.log(darkMode)
+
+darkMode.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode')
+})

@@ -6,6 +6,7 @@
   margin: 0 20px 20px 20px;
   box-shadow: 0px 0px 5px 1px var(--box-shadow-light);
   border-radius: 2px;
+  color: var(--text-color);
 }
 
 .add-question-form__title {

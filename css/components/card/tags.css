@@ -5,6 +5,7 @@
   margin: 0;
   padding: 15px;
   background-color: var(--tags-bg);
+  color: var(--text-color);
 }
 
 .tags__item {

@@ -5,6 +5,7 @@
   justify-content: space-between;
   position: relative;
   box-shadow: 1px 8px 15px -10px var(--box-shadow-spec);
+  color: var(--text-color);
 }
 
 .card-header__title {
