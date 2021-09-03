@@ -441,3 +441,23 @@ toggleAnswerButtonGainsboroughBookmarked.addEventListener('click', () => {
     )
   }
 })
+
+// Question form
+
+const resetFormElAfterSubmitButton = document.querySelector(
+  '.add-question-form__submit-button'
+)
+const resetFormElButton = document.querySelector(
+  '.add-question-form__reset-button'
+)
+
+resetFormElAfterSubmitButton.addEventListener('click', () => {
+  document.getElementById('form').reset()
+  result = window.confirm(
+    'Your question has been successfully submitted and will be reviewed at some point in the future and once successfully reviewed will be included with the already existing questions. Thank you for your efforts! :-)'
+  )
+})
+
+resetFormElButton.addEventListener('click', () => {
+  document.getElementById('form').reset()
+})
