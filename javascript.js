@@ -80,6 +80,8 @@ const saveBookmarkThree = document.querySelector('#card8')
 const saveBookmarkFour = document.querySelector('#card9')
 const saveBookmarkFive = document.querySelector('#card10')
 
+// Part 3: Bookmark function for questions in main__questions
+
 toggleBookmarkOne.addEventListener('click', () => {
   toggleBookmarkOne.classList.toggle('card-header__bookmarked')
   toggleBookmarkOne.classList.toggle('card-header__bookmark')
@@ -89,8 +91,6 @@ toggleBookmarkOne.addEventListener('click', () => {
     saveBookmarkOne.classList.add('card--hidden')
   }
 })
-
-// Part 3: Bookmark function for questions in main__questions
 
 toggleBookmarkTwo.addEventListener('click', () => {
   toggleBookmarkTwo.classList.toggle('card-header__bookmarked')
@@ -220,13 +220,15 @@ const toggleAnswerButtonGainsborough = document.querySelector(
   '#answer-button-gainsborough'
 )
 
-// Part 2: const for answer content of questions in main__questions
+// Part 2: Const for answer content of questions in main__questions
 
 const presentAnswerArnolfini = document.querySelector('#answer-arnolfini')
 const presentAnswerGogh = document.querySelector('#answer-gogh')
 const presentAnswerGoya = document.querySelector('#answer-goya')
 const presentAnswerFriedrich = document.querySelector('#answer-friedrich')
 const presentAnswerGainsborough = document.querySelector('#answer-gainsborough')
+
+// Part 3: Answer card toggle for answers to questions in main__questions
 
 toggleAnswerButtonArnolfini.addEventListener('click', () => {
   presentAnswerArnolfini.classList.toggle('answer--hidden')
@@ -295,5 +297,147 @@ toggleAnswerButtonGainsborough.addEventListener('click', () => {
     toggleAnswerButtonGainsborough.textContent = 'Show Answer'
     toggleAnswerButtonGainsborough.classList.remove('card-content__hide-answer')
     toggleAnswerButtonGainsborough.classList.add('card-content__show-answer')
+  }
+})
+
+// Part 4: Const for answer buttons of questions in main__bookmarks
+
+const toggleAnswerButtonArnolfiniBookmarked = document.querySelector(
+  '#answer-button-arnolfini-bookmarked'
+)
+const toggleAnswerButtonGoghBookmarked = document.querySelector(
+  '#answer-button-gogh-bookmarked'
+)
+const toggleAnswerButtonGoyaBookmarked = document.querySelector(
+  '#answer-button-goya-bookmarked'
+)
+const toggleAnswerButtonFriedrichBookmarked = document.querySelector(
+  '#answer-button-friedrich-bookmarked'
+)
+const toggleAnswerButtonGainsboroughBookmarked = document.querySelector(
+  '#answer-button-gainsborough-bookmarked'
+)
+
+// Part 5: Const for answer content of questions in main__bookmarks
+
+const presentAnswerArnolfiniBookmarked = document.querySelector(
+  '#answer-arnolfini-bookmarked'
+)
+const presentAnswerGoghBookmarked = document.querySelector(
+  '#answer-gogh-bookmarked'
+)
+const presentAnswerGoyaBookmarked = document.querySelector(
+  '#answer-goya-bookmarked'
+)
+const presentAnswerFriedrichBookmarked = document.querySelector(
+  '#answer-friedrich-bookmarked'
+)
+const presentAnswerGainsboroughBookmarked = document.querySelector(
+  '#answer-gainsborough-bookmarked'
+)
+
+// Part 6: Answer card toggle for answers to questions in main__bookmarks
+
+toggleAnswerButtonArnolfiniBookmarked.addEventListener('click', () => {
+  presentAnswerArnolfiniBookmarked.classList.toggle('answer--hidden')
+  presentAnswerArnolfiniBookmarked.classList.toggle('answer')
+  if (!presentAnswerArnolfiniBookmarked.classList.contains('answer--hidden')) {
+    toggleAnswerButtonArnolfiniBookmarked.textContent = 'Hide Answer'
+    toggleAnswerButtonArnolfiniBookmarked.classList.add(
+      'card-content__hide-answer'
+    )
+    toggleAnswerButtonArnolfiniBookmarked.classList.remove(
+      'card-content__show-answer'
+    )
+  } else {
+    toggleAnswerButtonArnolfiniBookmarked.textContent = 'Show Answer'
+    toggleAnswerButtonArnolfiniBookmarked.classList.remove(
+      'card-content__hide-answer'
+    )
+    toggleAnswerButtonArnolfiniBookmarked.classList.add(
+      'card-content__show-answer'
+    )
+  }
+})
+
+toggleAnswerButtonGoghBookmarked.addEventListener('click', () => {
+  presentAnswerGoghBookmarked.classList.toggle('answer--hidden')
+  presentAnswerGoghBookmarked.classList.toggle('answer')
+  if (!presentAnswerGoghBookmarked.classList.contains('answer--hidden')) {
+    toggleAnswerButtonGoghBookmarked.textContent = 'Hide Answer'
+    toggleAnswerButtonGoghBookmarked.classList.add('card-content__hide-answer')
+    toggleAnswerButtonGoghBookmarked.classList.remove(
+      'card-content__show-answer'
+    )
+  } else {
+    toggleAnswerButtonGoghBookmarked.textContent = 'Show Answer'
+    toggleAnswerButtonGoghBookmarked.classList.remove(
+      'card-content__hide-answer'
+    )
+    toggleAnswerButtonGoghBookmarked.classList.add('card-content__show-answer')
+  }
+})
+
+toggleAnswerButtonGoyaBookmarked.addEventListener('click', () => {
+  presentAnswerGoyaBookmarked.classList.toggle('answer--hidden')
+  presentAnswerGoyaBookmarked.classList.toggle('answer')
+  if (!presentAnswerGoyaBookmarked.classList.contains('answer--hidden')) {
+    toggleAnswerButtonGoyaBookmarked.textContent = 'Hide Answer'
+    toggleAnswerButtonGoyaBookmarked.classList.add('card-content__hide-answer')
+    toggleAnswerButtonGoyaBookmarked.classList.remove(
+      'card-content__show-answer'
+    )
+  } else {
+    toggleAnswerButtonGoyaBookmarked.textContent = 'Show Answer'
+    toggleAnswerButtonGoyaBookmarked.classList.remove(
+      'card-content__hide-answer'
+    )
+    toggleAnswerButtonGoyaBookmarked.classList.add('card-content__show-answer')
+  }
+})
+
+toggleAnswerButtonFriedrichBookmarked.addEventListener('click', () => {
+  presentAnswerFriedrichBookmarked.classList.toggle('answer--hidden')
+  presentAnswerFriedrichBookmarked.classList.toggle('answer')
+  if (!presentAnswerFriedrichBookmarked.classList.contains('answer--hidden')) {
+    toggleAnswerButtonFriedrichBookmarked.textContent = 'Hide Answer'
+    toggleAnswerButtonFriedrichBookmarked.classList.add(
+      'card-content__hide-answer'
+    )
+    toggleAnswerButtonFriedrichBookmarked.classList.remove(
+      'card-content__show-answer'
+    )
+  } else {
+    toggleAnswerButtonFriedrichBookmarked.textContent = 'Show Answer'
+    toggleAnswerButtonFriedrichBookmarked.classList.remove(
+      'card-content__hide-answer'
+    )
+    toggleAnswerButtonFriedrichBookmarked.classList.add(
+      'card-content__show-answer'
+    )
+  }
+})
+
+toggleAnswerButtonGainsboroughBookmarked.addEventListener('click', () => {
+  presentAnswerGainsboroughBookmarked.classList.toggle('answer--hidden')
+  presentAnswerGainsboroughBookmarked.classList.toggle('answer')
+  if (
+    !presentAnswerGainsboroughBookmarked.classList.contains('answer--hidden')
+  ) {
+    toggleAnswerButtonGainsboroughBookmarked.textContent = 'Hide Answer'
+    toggleAnswerButtonGainsboroughBookmarked.classList.add(
+      'card-content__hide-answer'
+    )
+    toggleAnswerButtonGainsboroughBookmarked.classList.remove(
+      'card-content__show-answer'
+    )
+  } else {
+    toggleAnswerButtonGainsboroughBookmarked.textContent = 'Show Answer'
+    toggleAnswerButtonGainsboroughBookmarked.classList.remove(
+      'card-content__hide-answer'
+    )
+    toggleAnswerButtonGainsboroughBookmarked.classList.add(
+      'card-content__show-answer'
+    )
   }
 })
