@@ -7,6 +7,8 @@
   margin: 0 auto 20px auto;
   box-shadow: 0px 2px 5px var(--box-shadow-light);
   color: var(--text-color);
+  background-color: var(--card-bg-color);
+  border-radius: 0 0 5px 5px;
 }
 
 .profile-header {
@@ -33,7 +35,7 @@
   padding: 10px;
   margin: 30px 0 20px 0;
   text-transform: uppercase;
-  background-color: var(--buttom-spec-bg-color);
+  background-color: var(--button-spec-bg-color);
   color: var(--text-color-color-bg);
   box-shadow: 0px 2px 5px var(--box-shadow-light);
 }
@@ -55,7 +57,7 @@
 .about-tags__item {
   list-style-type: square;
   list-style-position: inside;
-  background-color: var(--main-bg-color);
+  background-color: var(--tags-item-bg-color);
   padding: 5px 10px 5px 10px;
   border-radius: 5px;
   margin: 5px;
@@ -69,7 +71,7 @@
 }
 
 .profile-actions__edit {
-  background-color: var(--button-submit-second-bg-color);
+  background-color: var(--button-spec-bg-color);
   color: var(--text-color-color-bg);
   border: none;
   padding: 10px 15px 10px 15px;
@@ -82,7 +84,7 @@
 }
 
 .profile-actions__logout {
-  background-color: var(--buttom-reg-bg-color);
+  background-color: var(--button-logout-bg-color);
   color: var(--text-color-color-bg);
   border: none;
   padding: 10px 15px 10px 15px;
@@ -95,7 +97,7 @@
 }
 
 .profile-actions__delete {
-  background-color: var(--buttom-spec-bg-color);
+  background-color: var(--button-reg-bg-color);
   color: var(--text-color-color-bg);
   border: none;
   padding: 10px 15px 10px 15px;

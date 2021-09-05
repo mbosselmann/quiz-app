@@ -5,18 +5,19 @@
   font-family: 'Roboto', sans-serif;
   margin: 0 20px 20px 20px;
   box-shadow: 0px 0px 5px 1px var(--box-shadow-light);
-  border-radius: 2px;
+  border-radius: 5px;
   color: var(--text-color);
+  background-color: var(--card-bg-color);
 }
 
 .add-question-form__title {
   box-shadow: 1px 8px 15px -10px var(--box-shadow-light);
-  background-color: var(--button-submit-bg-color);
+  background-color: var(--form-header-bg-color);
   margin-bottom: 10px;
   padding: 12px 20px 10px 20px;
   text-transform: uppercase;
   color: var(--text-color-color-bg);
-  border-radius: 2px 2px 0 0;
+  border-radius: 5px 5px 0 0;
   font-size: 1.2rem;
 }
 
@@ -34,12 +35,15 @@
   border-radius: 5px;
   border: 2px solid var(--border-color);
   font-family: 'Roboto', sans-serif;
+  background-color: var(--input-bg-color);
+  color: var(--text-color);
 }
 
 .add-question-form__insert-question-field--focus:focus,
 .add-question-form__insert-answer--focus:focus {
   outline: none;
   box-shadow: 0px 0px 3px 1px var(--border-color);
+  background-color: var(--input-bg-color);
 }
 
 .add-question-form__upload-img-detail-input,
@@ -69,10 +73,12 @@
   border: 2px solid var(--border-color);
   font-family: 'Roboto', sans-serif;
   padding: 10px;
+  background-color: var(--input-bg-color);
+  color: var(--text-color);
 }
 
 .add-question-form__submit-button {
-  background-color: var(--button-submit-second-bg-color);
+  background-color: var(--button-spec-bg-color);
   color: var(--text-color-color-bg);
   border: none;
   padding: 10px 15px 10px 15px;
@@ -84,7 +90,7 @@
 }
 
 .add-question-form__reset-button {
-  background-color: var(--buttom-spec-bg-color);
+  background-color: var(--button-reg-bg-color);
   color: var(--text-color-color-bg);
   border: none;
   padding: 10px 15px 10px 15px;
@@ -93,4 +99,8 @@
   text-transform: uppercase;
   font-size: 0.8rem;
   margin: 0 40px 20px 40px;
+}
+
+::placeholder {
+  color: var(--text-color-placeholder);
 }

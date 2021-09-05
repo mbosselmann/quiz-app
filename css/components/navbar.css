@@ -20,7 +20,7 @@
 }
 
 .item__link--position {
-  background-color: var(--buttom-spec-bg-color);
+  background-color: var(--button-spec-bg-color);
   box-shadow: inset 0px 0px 10px 2px var(--box-shadow-button-spec);
 }
 

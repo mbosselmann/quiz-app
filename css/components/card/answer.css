@@ -1,6 +1,8 @@
 .answer {
   box-shadow: 0px 0px 5px 1px var(--box-shadow-light);
   margin: 0 10px 10px 10px;
+  background-color: var(--answer-bg-color);
+  border-radius: 5px;
 }
 
 .answer-header {
@@ -11,6 +13,7 @@
   position: relative;
   box-shadow: 1px 8px 15px -10px var(--box-shadow-light);
   background-color: var(--answer-header-bg-color);
+  border-radius: 5px 5px 0 0;
 }
 
 .answer__content {
@@ -42,7 +45,7 @@
 }
 
 .card-content__show-answer {
-  background-color: var(--buttom-reg-bg-color);
+  background-color: var(--button-reg-bg-color);
   color: var(--text-color-color-bg);
   border: none;
   padding: 10px 15px 10px 15px;

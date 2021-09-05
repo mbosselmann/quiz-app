@@ -10,7 +10,7 @@
 
 .tags__item {
   list-style-type: none;
-  background-color: var(--main-bg-color);
+  background-color: var(--tags-item-bg-color);
   padding: 5px 10px 5px 10px;
   border-radius: 5px;
 }
