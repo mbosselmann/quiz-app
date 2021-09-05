@@ -57,7 +57,7 @@
 }
 
 .card-content__hide-answer {
-  background-color: var(--buttom-spec-bg-color);
+  background-color: var(--button-spec-bg-color);
   color: var(--text-color-color-bg);
   border: none;
   padding: 10px 15px 10px 15px;
