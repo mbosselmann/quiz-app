@@ -12,6 +12,7 @@ HTML {
   --text-color: #000;
   --text-color-color-bg: #fff;
   --main-bg-color: #fff;
+  --card-bg-color: #fff;
   --top-bottom-bg-color: #2c75ac;
   --box-shadow-spec: #2c75ac;
   --box-shadow-normal: #6d98ba;
@@ -31,25 +32,30 @@ HTML {
 }
 
 .dark-mode {
-  --text-color: #fff;
-  --text-color-color-bg: #fff;
-  --main-bg-color: #242424;
-  --top-bottom-bg-color: #242424;
-  --box-shadow-spec: #6e8396;
-  --box-shadow-normal: #404040;
-  --box-shadow-light: #2d2d2d;
+  --text-color: #f2f2f2;
+  --text-color-color-bg: #fcfcfc;
+  --main-bg-color: #0c0d0c;
+  --card-bg-color: #292929;
+  --top-bottom-bg-color: #363c59;
+  --box-shadow-spec: none;
+  --box-shadow-normal: none;
+  --box-shadow-light: none;
+  --box-shadow-button-spec: none;
+  --answer-img-boxshadow: none;
   --buttom-reg-bg-color: #3c4856;
   --buttom-spec-bg-color: #a55777;
   --button-submit-bg-color: #24877f;
   --button-submit-second-bg-color: #009689;
   --button-img-upload: #6ba9e4;
-  --box-shadow-button-spec: #de8bab;
-  --tags-bg: #e6f4f1;
+  --tags-bg: #373740;
   --bookmark-off-color: #d7f3ff;
   --bookmark-on-color: #de8bab;
   --answer-header-bg-color: #24877f;
-  --answer-img-boxshadow: #24877f;
   --border-color: #bbc7d1;
+}
+
+.dark-mode-img {
+  filter: brightness(0.8);
 }
 
 body {
