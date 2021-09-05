@@ -1,15 +1,28 @@
 .header {
-  background-color: #2c75ac;
-  color: #fff;
+  background-color: var(--top-bottom-bg-color);
+  color: var(--text-color-color-bg);
   z-index: 10;
+  box-shadow: 0 2px 5px var(--box-shadow-normal);
+  margin-bottom: 10px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .header__title {
   font-family: 'Merriweather', serif;
   font-size: 1.5rem;
-  text-align: center;
   padding: 10px;
-  box-shadow: 0 2px 5px #6d98ba;
-  margin-bottom: 10px;
-  height: 80px;
+}
+
+#dark-mode {
+  margin: 0 10px 0 80px;
+  padding: 10px;
+  background-color: var(--top-bottom-bg-color);
+  border: none;
+}
+
+#dark-mode-icon {
+  color: var(--text-color-color-bg);
 }

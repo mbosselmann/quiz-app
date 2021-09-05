@@ -5,7 +5,10 @@
   font-family: 'Roboto', sans-serif;
   width: 90vw;
   margin: 0 auto 20px auto;
-  box-shadow: 0px 2px 5px #bbc7d1;
+  box-shadow: 0px 2px 5px var(--box-shadow-light);
+  color: var(--text-color);
+  background-color: var(--card-bg-color);
+  border-radius: 0 0 5px 5px;
 }
 
 .profile-header {
@@ -17,7 +20,7 @@
 
 .profile-header__picture {
   width: 90vw;
-  box-shadow: 0px 2px 5px #bbc7d1;
+  box-shadow: 0px 2px 5px var(--box-shadow-light);
   margin: 10px auto 0 auto;
 }
 
@@ -32,9 +35,9 @@
   padding: 10px;
   margin: 30px 0 20px 0;
   text-transform: uppercase;
-  background-color: #de8bab;
-  color: #fff;
-  box-shadow: 0px 2px 5px #bbc7d1;
+  background-color: var(--button-spec-bg-color);
+  color: var(--text-color-color-bg);
+  box-shadow: 0px 2px 5px var(--box-shadow-light);
 }
 
 .about-person__text {
@@ -46,7 +49,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0 10px 10px 10px;
-  background-color: #e6f4f1;
+  background-color: var(--tags-bg);
   padding: 10px 0 10px 0;
   border-radius: 5px;
 }
@@ -54,7 +57,7 @@
 .about-tags__item {
   list-style-type: square;
   list-style-position: inside;
-  background-color: #fff;
+  background-color: var(--tags-item-bg-color);
   padding: 5px 10px 5px 10px;
   border-radius: 5px;
   margin: 5px;
@@ -68,12 +71,12 @@
 }
 
 .profile-actions__edit {
-  background-color: #009689;
-  color: #fff;
+  background-color: var(--button-spec-bg-color);
+  color: var(--text-color-color-bg);
   border: none;
   padding: 10px 15px 10px 15px;
   border-radius: 5px;
-  box-shadow: 0 2px 5px #6d98ba;
+  box-shadow: 0 2px 5px var(--box-shadow-normal);
   text-transform: uppercase;
   font-size: 0.8rem;
   width: 80%;
@@ -81,12 +84,12 @@
 }
 
 .profile-actions__logout {
-  background-color: #3c4856;
-  color: #fff;
+  background-color: var(--button-logout-bg-color);
+  color: var(--text-color-color-bg);
   border: none;
   padding: 10px 15px 10px 15px;
   border-radius: 5px;
-  box-shadow: 0 2px 5px #6d98ba;
+  box-shadow: 0 2px 5px var(--box-shadow-normal);
   text-transform: uppercase;
   font-size: 0.8rem;
   width: 80%;
@@ -94,20 +97,14 @@
 }
 
 .profile-actions__delete {
-  background-color: #a55777;
-  color: #fff;
+  background-color: var(--button-reg-bg-color);
+  color: var(--text-color-color-bg);
   border: none;
   padding: 10px 15px 10px 15px;
   border-radius: 5px;
-  box-shadow: 0 2px 5px #6d98ba;
+  box-shadow: 0 2px 5px var(--box-shadow-normal);
   text-transform: uppercase;
   font-size: 0.8rem;
   width: 80%;
   margin: 0 auto 20px auto;
-}
-
-.profile-actions__edit--active:active,
-.profile-actions__logout--active:active,
-.profile-actions__delete--active:active {
-  font-size: 0.9rem;
 }

@@ -196,8 +196,10 @@ toggleBookmarkTen.addEventListener('click', () => {
 // Card answers
 
 const toggleAnswerButton = document.querySelectorAll('.answer-button')
+console.log(toggleAnswerButton)
 
 const presentAnswer = document.querySelectorAll('.present-answer')
+console.log(presentAnswer)
 
 toggleAnswerButton.forEach((buttonEl, indexAnswer) => {
   buttonEl.addEventListener('click', () => {
@@ -233,4 +235,16 @@ resetFormElAfterSubmitButton.addEventListener('click', () => {
 
 resetFormElButton.addEventListener('click', () => {
   document.getElementById('form').reset()
+})
+
+// Dark mode
+
+const toggleDarkMode = document.querySelector('#dark-mode')
+let imgCollection = document.querySelectorAll('.img-select')
+
+toggleDarkMode.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode')
+  for (let i = 0; i < imgCollection.length; i += 1) {
+    imgCollection.item(i).classList.toggle('dark-mode-img')
+  }
 })

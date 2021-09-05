@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
+    <script src="main.js" defer></script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,7 +25,6 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <script src="javascript.js" defer></script>
   </head>
 
   <body>
@@ -33,6 +33,9 @@
         A Walk Through <br />
         Art History
       </h1>
+      <button id="dark-mode">
+        <span id="dark-mode-icon" class="material-icons"> nights_stay </span>
+      </button>
     </header>
     <main id="main__questions" class="main">
       <section class="intro">
@@ -42,7 +45,11 @@
           of famous masterpieces of art. Now it's up to you to identify the
           right works of art.
         </p>
-        <img class="intro__footprints" src="/images/footprints.png" alt="" />
+        <img
+          class="intro__footprints img-select"
+          src="/images/footprints.png"
+          alt=""
+        />
         <p class="intro__start">Let's go!</p>
       </section>
       <section class="card">
@@ -58,7 +65,7 @@
             To which famous masterpiece does this detail belong?
           </p>
           <img
-            class="card-content__img"
+            class="card-content__img img-select"
             src="images/arnolfinidetail.png"
             alt="Detail picture for question"
           />
@@ -76,7 +83,7 @@
               <h3 class="answer__title">Answer:</h3>
             </div>
             <div class="answer__content">
-              <img class="content__img" src="images/arnolfini.png" />
+              <img class="content__img img-select" src="images/arnolfini.png" />
               <p class="content__text">
                 The image detail shown above is a portion of the painting
                 <strong>"The Arnolfini Wedding"</strong> by
@@ -106,7 +113,7 @@
             To which famous masterpiece does this detail belong?
           </p>
           <img
-            class="card-content__img"
+            class="card-content__img img-select"
             src="images/starrynightdetail.png"
             alt="Detail picture for question"
           />
@@ -121,7 +128,10 @@
               <h3 class="answer__title">Answer:</h3>
             </div>
             <div class="answer__content">
-              <img class="content__img" src="images/starrynight.png" />
+              <img
+                class="content__img img-select"
+                src="images/starrynight.png"
+              />
               <p class="content__text">
                 The moon can be seen in the oil painting
                 <strong>"The Starry Night"</strong> by
@@ -151,7 +161,7 @@
             To which famous masterpiece does this detail belong?
           </p>
           <img
-            class="card-content__img"
+            class="card-content__img img-select"
             src="images/goyadetail.png"
             alt="Detail picture for question"
           />
@@ -166,7 +176,7 @@
               <h3 class="answer__title">Answer:</h3>
             </div>
             <div class="answer__content">
-              <img class="content__img" src="images/goya.png" />
+              <img class="content__img img-select" src="images/goya.png" />
               <p class="content__text">
                 <strong>Francisco Goya</strong> painted
                 <strong>"The Third of May"</strong> in the year
@@ -196,7 +206,7 @@
             To which famous masterpiece does this detail belong?
           </p>
           <img
-            class="card-content__img"
+            class="card-content__img img-select"
             src="images/wandererdetail.png"
             alt="Detail picture for question"
           />
@@ -214,7 +224,7 @@
               <h3 class="answer__title">Answer:</h3>
             </div>
             <div class="answer__content">
-              <img class="content__img" src="images/wanderer.png" />
+              <img class="content__img img-select" src="images/wanderer.png" />
               <p class="content__text">
                 The <strong>"Wanderer above the Sea of Fog"</strong> was painted
                 by <strong>Caspar David Friedrich</strong>. It' estimated that
@@ -243,7 +253,7 @@
             To which famous masterpiece does this detail belong?
           </p>
           <img
-            class="card-content__img"
+            class="card-content__img img-select"
             src="images/andrewsdetail.png"
             alt="Detail picture for question"
           />
@@ -261,7 +271,7 @@
               <h3 class="answer__title">Answer:</h3>
             </div>
             <div class="answer__content">
-              <img class="content__img" src="images/andrews.png" />
+              <img class="content__img img-select" src="images/andrews.png" />
               <p class="content__text">
                 The hand belongs to a portrait of Mrs Andrews in
                 <strong>"Mr and Mrs Andrews"</strong> by
@@ -293,7 +303,7 @@
             To which famous masterpiece does this detail belong?
           </p>
           <img
-            class="card-content__img"
+            class="card-content__img img-select"
             src="images/arnolfinidetail.png"
             alt="Detail picture for question"
           />
@@ -311,7 +321,7 @@
               <h3 class="answer__title">Answer:</h3>
             </div>
             <div class="answer__content">
-              <img class="content__img" src="images/arnolfini.png" />
+              <img class="content__img img-select" src="images/arnolfini.png" />
               <p class="content__text">
                 The image detail shown above is a portion of the painting
                 <strong>"The Arnolfini Wedding"</strong> by
@@ -341,7 +351,7 @@
             To which famous masterpiece does this detail belong?
           </p>
           <img
-            class="card-content__img"
+            class="card-content__img img-select"
             src="images/starrynightdetail.png"
             alt="Detail picture for question"
           />
@@ -359,7 +369,10 @@
               <h3 class="answer__title">Answer:</h3>
             </div>
             <div class="answer__content">
-              <img class="content__img" src="images/starrynight.png" />
+              <img
+                class="content__img img-select"
+                src="images/starrynight.png"
+              />
               <p class="content__text">
                 The moon can be seen in the oil painting
                 <strong>"The Starry Night"</strong> by
@@ -389,7 +402,7 @@
             To which famous masterpiece does this detail belong?
           </p>
           <img
-            class="card-content__img"
+            class="card-content__img img-select"
             src="images/goyadetail.png"
             alt="Detail picture for question"
           />
@@ -407,7 +420,7 @@
               <h3 class="answer__title">Answer:</h3>
             </div>
             <div class="answer__content">
-              <img class="content__img" src="images/goya.png" />
+              <img class="content__img img-select" src="images/goya.png" />
               <p class="content__text">
                 <strong>Francisco Goya</strong> painted
                 <strong>"The Third of May"</strong> in the year
@@ -437,7 +450,7 @@
             To which famous masterpiece does this detail belong?
           </p>
           <img
-            class="card-content__img"
+            class="card-content__img img-select"
             src="images/wandererdetail.png"
             alt="Detail picture for question"
           />
@@ -455,7 +468,7 @@
               <h3 class="answer__title">Answer:</h3>
             </div>
             <div class="answer__content">
-              <img class="content__img" src="images/wanderer.png" />
+              <img class="content__img img-select" src="images/wanderer.png" />
               <p class="content__text">
                 The <strong>"Wanderer above the Sea of Fog"</strong> was painted
                 by <strong>Caspar David Friedrich</strong>. It' estimated that
@@ -484,7 +497,7 @@
             To which famous masterpiece does this detail belong?
           </p>
           <img
-            class="card-content__img"
+            class="card-content__img img-select"
             src="images/andrewsdetail.png"
             alt="Detail picture for question"
           />
@@ -502,7 +515,7 @@
               <h3 class="answer__title">Answer:</h3>
             </div>
             <div class="answer__content">
-              <img class="content__img" src="images/andrews.png" />
+              <img class="content__img img-select" src="images/andrews.png" />
               <p class="content__text">
                 The hand belongs to a portrait of Mrs Andrews in
                 <strong>"Mr and Mrs Andrews"</strong> by
@@ -522,7 +535,11 @@
     </main>
     <main id="main__create" class="main main--hidden">
       <section class="explanation">
-        <img class="intro__footprints" src="/images/footprints.png" alt="" />
+        <img
+          class="intro__footprints img-select"
+          src="/images/footprints.png"
+          alt=""
+        />
         <h2 class="explanation__title">Add your own question</h2>
         <p class="explanation__text">
           Dou you want to add your own questions to this walk through the
@@ -547,10 +564,7 @@
           placeholder="Insert your question here! :-)"
         />
         <label
-          class="
-            add-question-form__upload-img-detail-label
-            add-question-form__upload-img-detail-label--active
-          "
+          class="add-question-form__upload-img-detail-label"
           for="image-detail"
           >Upload image detail</label
         >
@@ -559,12 +573,7 @@
           class="add-question-form__upload-img-detail-input"
           type="file"
         />
-        <label
-          class="
-            add-question-form__upload-img-label
-            add-question-form__upload-img-label--active
-          "
-          for="image-detail"
+        <label class="add-question-form__upload-img-label" for="image-detail"
           >Upload image for answer</label
         >
         <input
@@ -586,21 +595,12 @@
           "
           placeholder="Insert your answer here! :-)"
         ></textarea>
-        <button
-          class="
-            add-question-form__submit-button
-            add-question-form__submit-button--active
-          "
-          type="button"
-        >
+        <button class="add-question-form__submit-button" type="button">
           Submit
         </button>
         <button
           id="reset-button"
-          class="
-            add-question-form__reset-button
-            add-question-form__reset-button--active
-          "
+          class="add-question-form__reset-button"
           type="button"
         >
           Reset
@@ -612,7 +612,7 @@
         <h2 class="about-person__title">Your profile</h2>
         <figure class="profile-header">
           <img
-            class="profile-header__picture"
+            class="profile-header__picture img-select"
             src="images/profile-picture.jpg"
           />
           <figcaption class="profile-header__name">Brutus</figcaption>
@@ -630,24 +630,9 @@
         </ul>
       </section>
       <section class="profile-actions">
-        <button
-          class="profile-actions__edit profile-actions__edit--active"
-          type="button"
-        >
-          Edit
-        </button>
-        <button
-          class="profile-actions__logout profile-actions__logout--active"
-          type="button"
-        >
-          Logout
-        </button>
-        <button
-          class="profile-actions__delete profile-actions__delete--active"
-          type="button"
-        >
-          Delete
-        </button>
+        <button class="profile-actions__edit" type="button">Edit</button>
+        <button class="profile-actions__logout" type="button">Logout</button>
+        <button class="profile-actions__delete" type="button">Delete</button>
       </section>
     </main>
 

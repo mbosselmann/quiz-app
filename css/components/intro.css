@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
 }
 
 .intro__title {

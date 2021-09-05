@@ -8,8 +8,68 @@ HTML {
   padding: 0;
 }
 
+:root {
+  --text-color: #000;
+  --text-color-color-bg: #fff;
+  --main-bg-color: #fff;
+  --card-bg-color: #fff;
+  --answer-bg-color: #fff;
+  --top-bottom-bg-color: #2c75ac;
+  --box-shadow-spec: #2c75ac;
+  --box-shadow-normal: #6d98ba;
+  --box-shadow-light: #9aadbf;
+  --box-shadow-img: #2c75ac;
+  --button-reg-bg-color: #3c4856;
+  --button-spec-bg-color: #a55777;
+  --button-edit-bg-color: #24877f;
+  --form-header-bg-color: #009689;
+  --button-img-upload: #6ba9e4;
+  --box-shadow-button-spec: #de8bab;
+  --tags-bg: #e6f4f1;
+  --bookmark-off-color: #d7f3ff;
+  --bookmark-on-color: #de8bab;
+  --answer-header-bg-color: #24877f;
+  --answer-img-boxshadow: #24877f;
+  --border-color: #bbc7d1;
+  --input-bg-color: #fff;
+  --tags-item-bg-color: #fff;
+}
+
+.dark-mode {
+  --text-color: rgba(255, 255, 255, 0.89);
+  --text-color-color-bg: rgba(255, 255, 255, 0.89);
+  --main-bg-color: #0c0d0c;
+  --card-bg-color: #292929;
+  --answer-bg-color: #43454a;
+  --top-bottom-bg-color: #363c59;
+  --box-shadow-spec: none;
+  --box-shadow-normal: none;
+  --box-shadow-light: none;
+  --box-shadow-button-spec: none;
+  --box-shadow-img: none;
+  --answer-img-boxshadow: none;
+  --button-reg-bg-color: #363c59;
+  --button-spec-bg-color: #918cb8;
+  --button-logout-bg-color: #878495;
+
+  --form-header-bg-color: #363c59;
+  --button-img-upload: #918cb8;
+  --tags-bg: #373740;
+  --bookmark-off-color: #666666;
+  --bookmark-on-color: #918cb8;
+  --answer-header-bg-color: #363c59;
+  --input-bg-color: #0c0d0c;
+  --border-color: #43454a;
+  --tags-item-bg-color: #292929;
+  --text-color-placeholder: #aca9bb;
+}
+
+.dark-mode-img {
+  filter: brightness(0.8);
+}
+
 body {
-  background-color: #fff;
+  background-color: var(--main-bg-color);
   display: grid;
   grid-template-rows: 80px auto 40px;
   height: 100vh;
@@ -24,7 +84,7 @@ main {
 }
 
 footer {
-  background-color: #2c75ac;
+  background-color: var(--top-bottom-bg-color);
   z-index: 10;
 }
 
