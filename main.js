@@ -57,6 +57,56 @@ buttonElHome.addEventListener('click', () => {
   buttonElHome.classList.add('item__link--position')
 })
 
+// Data
+
+const questionsObj = [
+  {
+    question: 'To which famous masterpiece does this detail belong?',
+    img: '/images/arnolfinidetail.png',
+    answer:
+      "The image detail shown above is a portion of the painting <strong>'The Arnolfini Wedding'</strong> by <strong>Jan van Eyck</strong> from <strong>1434</strong>. The artwork is located in the <strong>National Gallery in London</strong>.",
+    isBookmarked: false,
+    showAnswer: false,
+    tags: ['15th century', 'painting', 'Netherlands'],
+  },
+  {
+    question: 'To which famous masterpiece does this detail belong?',
+    img: '/images/starrynightdetail.png',
+    answer:
+      "The moon can be seen in the oil painting <strong>'The Starry Night'</strong> by <strong>Vincent van Gogh</strong>. Van Gogh painted the picture in <strong>June 1889</strong> and it can be seen today in the <strong>Museum of Modern Art in New York</strong>.",
+    isBookmarked: false,
+    showAnswer: false,
+    tags: ['19th century', 'painting', 'France'],
+  },
+  {
+    question: 'To which famous masterpiece does this detail belong?',
+    img: 'images/goyadetail.png',
+    answer:
+      "<strong>Francisco Goya</strong> painted <strong>'The Third of May'</strong> in the year <strong>1814</strong>. It's also known as 'El tres mayo de 1808en Madrid' and is located in the <strong>Museo del Prado in Madrid</strong>.",
+    isBookmarked: false,
+    showAnswer: false,
+    tags: ['19th century', 'painting', 'Spain'],
+  },
+  {
+    question: 'To which famous masterpiece does this detail belong?',
+    img: 'images/wandererdetail.png',
+    answer:
+      "The <strong>'Wanderer above the Sea of Fog'</strong> was painted by <strong>Caspar David Friedrich</strong>. It' estimated that it was created <strong>around 1808</strong>. Today it is on display in the <strong>Kunsthalle Hamburg</strong>.",
+    isBookmarked: false,
+    showAnswer: false,
+    tags: ['19th century', 'painting', 'Germany'],
+  },
+  {
+    question: 'To which famous masterpiece does this detail belong?',
+    img: 'images/andrewsdetail.png',
+    answer:
+      "The hand belongs to a portrait of Mrs Andrews in <strong>'Mr and Mrs Andrews'</strong> by <strong>Thomas Gainsborough</strong>. It's located in the <strong>National Gallery in London</strong> and was painted <strong>around 1750</strong>.",
+    isBookmarked: false,
+    showAnswer: false,
+    tags: ['19th century', 'painting', 'England'],
+  },
+]
+
 // Bookmarks
 
 //Part 1: Five bookmarks const for main__questions & five bookmarks const for main__bookmarks
