@@ -24,6 +24,7 @@ HTML {
   --button-edit-bg-color: #24877f;
   --form-header-bg-color: #009689;
   --button-img-upload: #6ba9e4;
+  --button-logout-bg-color: #6ba9e4;
   --box-shadow-button-spec: #de8bab;
   --tags-bg: #e6f4f1;
   --bookmark-off-color: #d7f3ff;
@@ -51,7 +52,6 @@ HTML {
   --button-reg-bg-color: #363c59;
   --button-spec-bg-color: #918cb8;
   --button-logout-bg-color: #878495;
-
   --form-header-bg-color: #363c59;
   --button-img-upload: #918cb8;
   --tags-bg: #373740;
