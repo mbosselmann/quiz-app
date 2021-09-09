@@ -200,10 +200,25 @@ function renderCard(questionsObj) {
 }
 
 questionsObj.forEach(object => {
-  renderCard(object)
+  renderCards(object, 'main__questions')
+})
+cardBookmarked.forEach((object, index) => {
+  renderCards(object, 'main__bookmarks')
 })
 
-// Bookmarks
+const toggleBookmark = document.querySelectorAll('.question-bookmark')
+
+
+toggleBookmark.forEach((bookmarkEl, index) => {
+  bookmarkEl.addEventListener('click', () => {
+    bookmarkEl.classList.toggle('card-header__bookmark')
+    bookmarkEl.classList.toggle('card-header__bookmarked')
+  })
+})
+
+// cardBookmarked.forEach((object, index) => {
+//   renderCards(object, 'main__bookmarks')
+// })
 
 //Part 1: Five bookmarks const for main__questions & five bookmarks const for main__bookmarks
 
