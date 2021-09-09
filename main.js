@@ -208,7 +208,6 @@ cardBookmarked.forEach((object, index) => {
 
 const toggleBookmark = document.querySelectorAll('.question-bookmark')
 
-
 toggleBookmark.forEach((bookmarkEl, index) => {
   bookmarkEl.addEventListener('click', () => {
     bookmarkEl.classList.toggle('card-header__bookmark')
