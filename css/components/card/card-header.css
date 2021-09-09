@@ -6,6 +6,7 @@
   position: relative;
   box-shadow: 1px 8px 15px -10px var(--box-shadow-spec);
   color: var(--text-color);
+  background-color: var(--card-header-bg-color);
 }
 
 .card-header__title {

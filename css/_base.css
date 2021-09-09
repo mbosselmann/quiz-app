@@ -15,6 +15,7 @@ HTML {
   --card-bg-color: #fff;
   --answer-bg-color: #fff;
   --top-bottom-bg-color: #2c75ac;
+  --card-header-bg-color: #fff;
   --box-shadow-spec: #2c75ac;
   --box-shadow-normal: #6d98ba;
   --box-shadow-light: #9aadbf;
@@ -43,6 +44,7 @@ HTML {
   --card-bg-color: #292929;
   --answer-bg-color: #43454a;
   --top-bottom-bg-color: #363c59;
+  --card-header-bg-color: #363c59;
   --box-shadow-spec: none;
   --box-shadow-normal: none;
   --box-shadow-light: none;
