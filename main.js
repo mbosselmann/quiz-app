@@ -1,64 +1,4 @@
-// Navigation through main sections
-
-const mainElQuestions = document.querySelector('#main__questions')
-const mainElBookmarks = document.querySelector('#main__bookmarks')
-const mainElAddQuestion = document.querySelector('#main__create')
-const mainElProfile = document.querySelector('#main__profile')
-
-const buttonElHome = document.querySelector('#navbar__home')
-const buttonElBookmarks = document.querySelector('#navbar__bookmarks')
-const buttonElAddQuestion = document.querySelector('#navbar__add-question')
-const buttonElProfile = document.querySelector('#navbar__profile')
-
-const mainElArr = document.querySelectorAll('.main')
-const navbarElArr = document.querySelectorAll('.navbar__item')
-
-function hideAll() {
-  mainElArr.forEach(mainEl => {
-    mainEl.classList.add('main--hidden')
-  })
-}
-
-function showButtonMainSection() {
-  navbarElArr.forEach(navEl => {
-    navEl.classList.remove('item__link--position')
-  })
-}
-
-buttonElBookmarks.addEventListener('click', () => {
-  hideAll()
-  mainElBookmarks.classList.remove('main--hidden')
-
-  showButtonMainSection()
-  buttonElBookmarks.classList.add('item__link--position')
-})
-
-buttonElAddQuestion.addEventListener('click', () => {
-  hideAll()
-  mainElAddQuestion.classList.remove('main--hidden')
-
-  showButtonMainSection()
-  buttonElAddQuestion.classList.add('item__link--position')
-})
-
-buttonElProfile.addEventListener('click', () => {
-  hideAll()
-  mainElProfile.classList.remove('main--hidden')
-
-  showButtonMainSection()
-  buttonElProfile.classList.add('item__link--position')
-})
-
-buttonElHome.addEventListener('click', () => {
-  hideAll()
-  mainElQuestions.classList.remove('main--hidden')
-
-  showButtonMainSection()
-  buttonElHome.classList.add('item__link--position')
-})
-
-// Data
-
+// consts
 const questionsObj = [
   {
     question: 'To which famous masterpiece does this detail belong?',
@@ -76,7 +16,7 @@ const questionsObj = [
     imgFull: '/images/starrynight.png',
     answer:
       "The moon can be seen in the oil painting <strong>'The Starry Night'</strong> by <strong>Vincent van Gogh</strong>. Van Gogh painted the picture in <strong>June 1889</strong> and it can be seen today in the <strong>Museum of Modern Art in New York</strong>.",
-    isBookmarked: false,
+    isBookmarked: true,
     showAnswer: false,
     tags: ['19th century', 'painting', 'France'],
   },
@@ -86,7 +26,7 @@ const questionsObj = [
     imgFull: '/images/goya.png',
     answer:
       "<strong>Francisco Goya</strong> painted <strong>'The Third of May'</strong> in the year <strong>1814</strong>. It's also known as 'El tres mayo de 1808en Madrid' and is located in the <strong>Museo del Prado in Madrid</strong>.",
-    isBookmarked: false,
+    isBookmarked: true,
     showAnswer: false,
     tags: ['19th century', 'painting', 'Spain'],
   },
@@ -100,24 +40,41 @@ const questionsObj = [
     showAnswer: false,
     tags: ['19th century', 'painting', 'Germany'],
   },
-  {
-    question: 'To which famous masterpiece does this detail belong?',
-    imgDetail: '/images/andrewsdetail.png',
-    imgFull: '/images/andrews.png',
-    answer:
-      "The hand belongs to a portrait of Mrs Andrews in <strong>'Mr and Mrs Andrews'</strong> by <strong>Thomas Gainsborough</strong>. It's located in the <strong>National Gallery in London</strong> and was painted <strong>around 1750</strong>.",
-    isBookmarked: false,
-    showAnswer: false,
-    tags: ['19th century', 'painting', 'England'],
-  },
+  // {
+  //   question: 'To which famous masterpiece does this detail belong?',
+  //   imgDetail: '/images/andrewsdetail.png',
+  //   imgFull: '/images/andrews.png',
+  //   answer:
+  //     "The hand belongs to a portrait of Mrs Andrews in <strong>'Mr and Mrs Andrews'</strong> by <strong>Thomas Gainsborough</strong>. It's located in the <strong>National Gallery in London</strong> and was painted <strong>around 1750</strong>.",
+  //   isBookmarked: false,
+  //   showAnswer: false,
+  //   tags: ['19th century', 'painting', 'England'],
+  // },
 ]
 
-// Question cards
+const mainElQuestions = document.querySelector('#main__questions')
+const mainElBookmarks = document.querySelector('#main__bookmarks')
+const mainElAddQuestion = document.querySelector('#main__create')
+const mainElProfile = document.querySelector('#main__profile')
 
-function renderCard(questionsObj) {
+const buttonElHome = document.querySelector('#navbar__home')
+const buttonElBookmarks = document.querySelector('#navbar__bookmarks')
+const buttonElAddQuestion = document.querySelector('#navbar__add-question')
+const buttonElProfile = document.querySelector('#navbar__profile')
+
+const mainElArr = document.querySelectorAll('.main')
+const navbarElArr = document.querySelectorAll('.navbar__item')
+
+const cardBookmarked = questionsObj.filter(
+  bookmark => bookmark.isBookmarked == true
+)
+
+// question cards
+
+function renderCards(questionsObj, id) {
   const cardSection = document.createElement('section')
   cardSection.classList.add('card')
-  document.getElementById('main__questions').appendChild(cardSection)
+  document.getElementById(id).appendChild(cardSection)
 
   const cardHeader = document.createElement('div')
   cardHeader.classList.add('card-header')
@@ -199,6 +156,27 @@ function renderCard(questionsObj) {
   })
 }
 
+// add question
+
+const newQuestion = {
+  question: 'To which famous masterpiece does this detail belong?',
+  imgDetail: '/images/andrewsdetail.png',
+  imgFull: '/images/andrews.png',
+  answer:
+    "The hand belongs to a portrait of Mrs Andrews in <strong>'Mr and Mrs Andrews'</strong> by <strong>Thomas Gainsborough</strong>. It's located in the <strong>National Gallery in London</strong> and was painted <strong>around 1750</strong>.",
+  isBookmarked: false,
+  showAnswer: false,
+  tags: ['19th century', 'painting', 'England'],
+}
+
+function addQuestion(question) {
+  questionsObj.push(question)
+}
+
+addQuestion(newQuestion)
+console.table(questionsObj)
+console.log(questionsObj)
+
 questionsObj.forEach(object => {
   renderCards(object, 'main__questions')
 })
@@ -215,44 +193,53 @@ toggleBookmark.forEach((bookmarkEl, index) => {
   })
 })
 
-// cardBookmarked.forEach((object, index) => {
-//   renderCards(object, 'main__bookmarks')
-// })
+// navigation
 
-//Part 1: Five bookmarks const for main__questions & five bookmarks const for main__bookmarks
-
-const toggleBookmark = document.querySelectorAll('.question-bookmark')
-
-const toggleBookmarked = document.querySelectorAll('.question-bookmarked')
-
-const saveBookmark = document.querySelectorAll('.card-bookmarked')
-
-toggleBookmark.forEach((buttonEl, indexCard) => {
-  buttonEl.addEventListener('click', () => {
-    if (saveBookmark[indexCard].classList.contains('card--hidden')) {
-      saveBookmark[indexCard].classList.remove('card--hidden')
-    } else {
-      saveBookmark[indexCard].classList.add('card--hidden')
-    }
+function hideAll() {
+  mainElArr.forEach(mainEl => {
+    mainEl.classList.add('main--hidden')
   })
+}
+
+function showButtonMainSection() {
+  navbarElArr.forEach(navEl => {
+    navEl.classList.remove('item__link--position')
+  })
+}
+
+buttonElBookmarks.addEventListener('click', () => {
+  hideAll()
+  mainElBookmarks.classList.remove('main--hidden')
+
+  showButtonMainSection()
+  buttonElBookmarks.classList.add('item__link--position')
 })
 
-toggleBookmark.forEach((bookmarkEl, index) => {
-  bookmarkEl.addEventListener('click', () => {
-    bookmarkEl.classList.toggle('card-header__bookmark')
-    bookmarkEl.classList.toggle('card-header__bookmarked')
-  })
+buttonElAddQuestion.addEventListener('click', () => {
+  hideAll()
+  mainElAddQuestion.classList.remove('main--hidden')
+
+  showButtonMainSection()
+  buttonElAddQuestion.classList.add('item__link--position')
 })
 
-toggleBookmarked.forEach((bookmarkEl, index) => {
-  bookmarkEl.addEventListener('click', () => {
-    saveBookmark[index].classList.toggle('card--hidden')
-    toggleBookmark[index].classList.remove('card-header__bookmarked')
-    toggleBookmark[index].classList.add('card-header__bookmark')
-  })
+buttonElProfile.addEventListener('click', () => {
+  hideAll()
+  mainElProfile.classList.remove('main--hidden')
+
+  showButtonMainSection()
+  buttonElProfile.classList.add('item__link--position')
 })
 
-// Card answers
+buttonElHome.addEventListener('click', () => {
+  hideAll()
+  mainElQuestions.classList.remove('main--hidden')
+
+  showButtonMainSection()
+  buttonElHome.classList.add('item__link--position')
+})
+
+// card answers
 
 const toggleAnswerButton = document.querySelectorAll('.answer-button')
 
@@ -274,7 +261,7 @@ toggleAnswerButton.forEach((buttonEl, indexAnswer) => {
   })
 })
 
-// Question form
+// question form
 
 const resetFormElAfterSubmitButton = document.querySelector(
   '.add-question-form__submit-button'
@@ -294,7 +281,7 @@ resetFormElButton.addEventListener('click', () => {
   document.getElementById('form').reset()
 })
 
-// Dark mode
+// dark mode
 
 const toggleDarkMode = document.querySelector('#dark-mode')
 let imgCollection = document.querySelectorAll('.img-select')
