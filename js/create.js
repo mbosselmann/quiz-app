@@ -1,4 +1,4 @@
-import { questionsObj, renderAllCards } from './cards.js'
+import { questions, renderAllCards } from './cards.js'
 
 export function addQuestion() {
   const newQuestion = {
@@ -12,10 +12,10 @@ export function addQuestion() {
     tags: ['19th century', 'painting', 'England'],
   }
 
-  questionsObj.push(newQuestion)
+  questions.push(newQuestion)
   renderAllCards()
-  console.table(questionsObj)
-  console.log(questionsObj)
+  console.table(questions)
+  console.log(questions)
 }
 
 export function createForm() {

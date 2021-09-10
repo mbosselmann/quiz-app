@@ -1,5 +1,5 @@
 import { initNavigation } from './js/navigation.js'
-import { renderAllCards, questionsObj } from './js/cards.js'
+import { renderAllCards, questions } from './js/cards.js'
 import { addQuestion, createForm } from './js/create.js'
 
 renderAllCards()

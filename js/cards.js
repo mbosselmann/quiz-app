@@ -1,4 +1,4 @@
-export const questionsObj = [
+export const questions = [
   {
     question: 'To which famous masterpiece does this detail belong?',
     imgDetail: '/images/arnolfinidetail.png',
@@ -51,13 +51,13 @@ export const questionsObj = [
   // },
 ]
 
-const cardBookmarked = questionsObj.filter(
+const cardBookmarked = questions.filter(
   bookmark => bookmark.isBookmarked == true
 )
 
 // question cards
 
-function renderCard(questionsObj, id) {
+function renderCard(questions, id) {
   const cardSection = document.createElement('section')
   cardSection.classList.add('card')
   document.getElementById(id).appendChild(cardSection)
@@ -83,14 +83,14 @@ function renderCard(questionsObj, id) {
 
   const cardContentQuestion = document.createElement('p')
   cardContentQuestion.classList.add('card-content__question')
-  cardContentQuestion.textContent = questionsObj.question
+  cardContentQuestion.textContent = questions.question
   cardContent.appendChild(cardContentQuestion)
 
   const questionImage = document.createElement('img')
   questionImage.classList.add('card-content__img')
   questionImage.classList.add('img-select')
-  questionImage.setAttribute('aria-label', 'Detail of masterpiece for question')
-  questionImage.setAttribute('src', questionsObj.imgDetail)
+  questionImage.setAttribute('alt', 'Detail of masterpiece for question')
+  questionImage.setAttribute('src', questions.imgDetail)
   cardContent.appendChild(questionImage)
 
   const cardButtonElAnswer = document.createElement('button')
@@ -121,20 +121,20 @@ function renderCard(questionsObj, id) {
   const answerImage = document.createElement('img')
   answerImage.classList.add('content__img')
   answerImage.classList.add('img-select')
-  answerImage.setAttribute('aria-label', 'Full view of masterpiece')
-  answerImage.setAttribute('src', questionsObj.imgFull)
+  answerImage.setAttribute('alt', 'Full view of masterpiece')
+  answerImage.setAttribute('src', questions.imgFull)
   answerContent.appendChild(answerImage)
 
   const answerText = document.createElement('p')
   answerText.classList.add('content__text')
-  answerText.innerHTML = questionsObj.answer
+  answerText.innerHTML = questions.answer
   answerContent.appendChild(answerText)
 
   const tagsList = document.createElement('ul')
   tagsList.classList.add('tags')
   cardSection.appendChild(tagsList)
 
-  questionsObj.tags.forEach(tag => {
+  questions.tags.forEach(tag => {
     const tagsItem = document.createElement('li')
     tagsItem.classList.add('tags__item')
     tagsItem.textContent = tag
@@ -145,7 +145,7 @@ function renderCard(questionsObj, id) {
 export function renderAllCards() {
   document.getElementById('main__questions').innerHTML = ''
   document.getElementById('main__bookmarks').innerHTML = ''
-  questionsObj.forEach(object => {
+  questions.forEach(object => {
     renderCard(object, 'main__questions')
   })
   cardBookmarked.forEach((object, index) => {
